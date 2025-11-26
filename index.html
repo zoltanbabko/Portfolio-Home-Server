@@ -2,116 +2,28 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site en construction</title>
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/10453/10453141.png">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            color: #fff;
-        }
-
-        /* ANIMATED GRADIENT BACKGROUND */
-        .bg {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(120deg, #4b6cb7, #182848, #3a1c71, #d76d77, #ffaf7b);
-            background-size: 300% 300%;
-            animation: gradientMove 12s ease infinite;
-            z-index: -1;
-            filter: blur(4px);
-        }
-
-        @keyframes gradientMove {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* CONTENT CARD */
-        .card {
-            backdrop-filter: blur(22px);
-            background: rgba(255, 255, 255, 0.07);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 55px 70px;
-            border-radius: 30px;
-            text-align: center;
-            box-shadow: 0 0 50px rgba(0,0,0,0.25);
-            animation: fadeIn 1.2s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(25px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* TITLE */
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
-            text-shadow: 0 0 12px rgba(255,255,255,0.55);
-        }
-
-        /* SUBTEXT */
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 35px;
-            opacity: 0.85;
-            line-height: 1.6;
-        }
-
-        /* MODERN LOADER */
-        .loader {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            border: 4px solid rgba(255,255,255,0.2);
-            border-top-color: #fff;
-            animation: spin 1s linear infinite;
-            margin: 0 auto;
-            filter: drop-shadow(0 0 6px #fff);
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-    </style>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Bienvenue sur mon site</h1>
+    </header>
 
-    <div class="bg"></div>
+    <nav>
+        <a href="/accueil">Accueil</a>
+        <a href="/contact">Contact</a>
+        <a href="/a-propos">À propos</a>
+    </nav>
 
-    <div class="card">
-        <h1>✨ Site en construction</h1>
-        <p>Nous façonnons quelque chose de beau.  
-           L’expérience sera bientôt disponible…</p>
-
-        <div class="loader"></div>
-
-        <footer>© 2025 – Zoltan BABKO / Portfolio</footer>
+    <div class="container">
+        <h2>Page d'accueil</h2>
+        <p>Ceci est la page principale du site.</p>
     </div>
 
+    <footer>
+        <p>© 2025 - Mon Site Web</p>
+    </footer>
 </body>
 </html>

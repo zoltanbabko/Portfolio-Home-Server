@@ -2,4 +2,4 @@ RewriteEngine On
 
 RewriteRule ^accueil/?$ pages/accueil.html [L]
 RewriteRule ^contact/?$ pages/contact.html [L]
-RewriteRule ^apropos/?$ pages/apropos.html [L]
+RewriteRule ^a-propos/?$ pages/a-propos.html [L]
