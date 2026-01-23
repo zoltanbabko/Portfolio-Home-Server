@@ -1,322 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zoltan Babko — Développeur en formation</title>
-    <link rel="stylesheet" href="tooplate-titan-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoltan Babko | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <div class="logo-icon">💼</div>
-                <div class="logo-text">Mon Portfolio</div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#timeline">Parcours</a></li>
-                <li><a href="#portfolio">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="mobile-nav" id="mobileNav">
-            <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#timeline">Parcours</a></li>
-                <li><a href="#portfolio">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-bg-animation">
-            <div class="floating-shape shape-1"></div>
-            <div class="floating-shape shape-2"></div>
-            <div class="floating-shape shape-3"></div>
-            <div class="geo-shape geo-1"></div>
-            <div class="geo-shape geo-2"></div>
-            <div class="particles">
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-            </div>
-        </div>
-        <div class="hero-content">
-            <h1>ZOLTAN BABKO</h1>
-            <p class="subtitle">Développeur en formation — Étudiant EPITECH</p>
-            <p>Étudiant en 3ᵉ année d'informatique. Recherche un stage du <strong>mars 2026</strong> au <strong>juillet 2026</strong>.</p>
-            <div class="cta-buttons">
-                <a href="#portfolio" class="cta-primary">Voir mes projets</a>
-                <a href="#contact" class="cta-secondary">Me contacter</a>
-            </div>
-        </div>
-    </section>
+    <div class="mode-switch-container">
+        <span class="mode-label">GUI</span>
+        <label class="switch">
+            <input type="checkbox" id="terminal-toggle">
+            <span class="slider round"></span>
+        </label>
+        <span class="mode-label">TERMINAL</span>
+    </div>
 
-    <section id="about" class="fade-in">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">À propos</h2>
-                <p class="section-subtitle">Passionné par le développement et l'innovation numérique</p>
+    <main id="main-content">
+        
+        <header class="hero">
+            <div class="profile-img-container">
+                <img src="/images/zoltan_babko.jpeg" alt="Zoltan Babko" class="profile-img"> 
             </div>
+            <h1>Zoltan Babko <span class="cursor">_</span></h1>
+            <h2>Étudiant Epitech & Développeur</h2>
+            <p class="highlight-text">
+                <i class="fas fa-search"></i> Recherche un stage : <strong>29 Mars 2026 - 29 Juillet 2026</strong>
+            </p>
+            <div class="social-links">
+                <a href="mailto:zoltan.babko@epitech.eu" class="btn"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/zoltan-babko/" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/zoltanbabko" target="_blank" class="btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </header>
 
-            <div class="about-content">
-                <div class="about-intro">
-                    <div class="about-image"></div>
-                    <div class="about-text">
-                        <h3>Présentation</h3>
-                        <p>Je m'appelle Zoltan Babko, j'ai 19 ans et je suis en 3ᵉ année d'informatique à EPITECH, Paris. Je développe des applications web et des solutions full-stack, et je m'intéresse particulièrement à la performance, l'accessibilité et la qualité du code. Je suis disponible pour un stage de mars à juillet 2026.</p>
-                        <p>Contact professionnel : <a href="mailto:zoltan.babko@epitech.eu">zoltan.babko@epitech.eu</a>. Mon profil LinkedIn : <a href="https://www.linkedin.com/in/zoltan-babko/" target="_blank" rel="noopener noreferrer">/in/zoltan-babko/</a>.</p>
-                    </div>
+        <section id="skills" class="section">
+            <h3 class="section-title">Stack Technique</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h4>Langages</h4>
+                    <p>C, C++, Python, Haskell, JavaScript, CSS/HTML, React, Dart</p>
                 </div>
-
-                <div class="about-cards">
-                    <div class="about-card">
-                        <h4>🎯 Mission</h4>
-                        <p>Apprendre, créer et contribuer à des projets qui allient ergonomie et performance technique !</p>
-                    </div>
-
-                    <div class="about-card">
-                        <h4>💡 Vision</h4>
-                        <p>Devenir un développeur polyvalent capable de porter des produits de l'idée à la production.</p>
-                    </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h4>Backend & Data</h4>
+                    <p>PostgreSQL, MariaDB, Django</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker"></i>
+                    <h4>Outils & OS</h4>
+                    <p>Docker, GitHub, VS Code, Linux, Mac, Windows</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills" class="fade-in">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Compétences & Outils</h2>
-                <p class="section-subtitle">Compétences techniques et outils que j'utilise régulièrement</p>
+        <section id="experience" class="section">
+            <h3 class="section-title">Expériences</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">Oct 2025 - Actuel</span>
+                    <h4>Développeur No-Code (Stage)</h4>
+                    <span class="company">Agence Piscines & Spas 60/02</span>
+                    <p>Modification de site web et création d'un site vitrine No-Code.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">Avril 2025 - Actuel</span>
+                    <h4>Game Master</h4>
+                    <span class="company">Rashomon Escape</span>
+                    <p>Animation de sessions d'escape game et gestion client.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">Sept 2024 - Déc 2024</span>
+                    <h4>Développeur Full-Stack (Stage)</h4>
+                    <span class="company">Alltoo</span>
+                    <p>Maintenance CRM (Python/Django), analyse de data et création site No-Code.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">Oct 2023 - Actuel</span>
+                    <h4>Ambassadeur</h4>
+                    <span class="company">Epitech</span>
+                    <p>Représentation de l'école et de ses valeurs lors d'événements.</p>
+                </div>
             </div>
+        </section>
 
-            <div class="skills-container">
-                <div class="skills-wrapper">
-                    <div class="skills-visual">
-                        <div class="skills-circle">
-                            <div class="skill-node">
-                                <div class="skill-icon">🐍</div>
-                                <div class="skill-name">Django</div>
-                            </div>
-                            <div class="skill-node">
-                                <div class="skill-icon">📱</div>
-                                <div class="skill-name">Mobile</div>
-                            </div>
-                            <div class="skill-node">
-                                <div class="skill-icon">⚙️</div>
-                                <div class="skill-name">Backend</div>
-                            </div>
-                            <div class="skill-node">
-                                <div class="skill-icon">👨🏻‍💻</div>
-                                <div class="skill-name">Frontend</div>
-                            </div>
-                            <div class="skill-node">
-                                <div class="skill-icon">🚀</div>
-                                <div class="skill-name">DevOps</div>
-                            </div>
-                            <div class="skill-node">
-                                <div class="skill-icon">🚫</div>
-                                <div class="skill-name">Web No-code</div>
-                            </div>
-                            <div class="skills-center">⚡</div>
-                        </div>
-                    </div>
+        <section id="projects" class="section">
+            <h3 class="section-title">Projets Marquants</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4><i class="fas fa-chart-line"></i> Dashboard Automatisé</h4>
+                    <p>Dashboard analytique reliant les données d'empreinte numérique (réseaux sociaux/web).</p>
+                    <span class="tag">Python</span> <span class="tag">API</span>
+                </div>
+                <div class="project-card">
+                    <h4><i class="fas fa-robot"></i> Plateforme IFTTT Clone</h4>
+                    <p>Automation de A à Z. Back Python/PgSQL, Front React, Mobile Flutter.</p>
+                    <span class="tag">React</span> <span class="tag">Flutter</span> <span class="tag">Python</span> <span class="tag">API</span>
+                </div>
+                <div class="project-card">
+                    <h4><i class="fas fa-server"></i> Home Server</h4>
+                    <p>Configuration serveur local pour hébergement portfolio (zoltanbabko.fr).</p>
+                    <span class="tag">Linux</span> <span class="tag">Réseau</span>
+                </div>
+            </div>
+        </section>
 
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <h4>Langages</h4>
-                            <p>C, C++, Python, JavaScript, HTML, CSS, Haskell</p>
-                            <div class="skill-progress">
-                                <div class="skill-progress-bar" style="width:85%"></div>
-                            </div>
-                        </div>
+        <footer>
+            <p>Basé à Paris, France • 06 77 32 08 20</p>
+            <p>&copy; 2026 Zoltan Babko. Codé avec <i class="fas fa-heart"></i></p>
+        </footer>
+    </main>
 
-                        <div class="skill-item">
-                            <h4>Bases de données</h4>
-                            <p>PostgreSQL, MariaDB</p>
-                            <div class="skill-progress">
-                                <div class="skill-progress-bar" style="width:75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <h4>Outils & Plateformes</h4>
-                            <p>GitHub, Docker, VS Code, GitHub Projects</p>
-                            <div class="skill-progress">
-                                <div class="skill-progress-bar" style="width:80%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <h4>Systèmes</h4>
-                            <p>Linux, Windows, MacOS</p>
-                            <div class="skill-progress">
-                                <div class="skill-progress-bar" style="width:85%"></div>
-                            </div>
-                        </div>
-                    </div>
+    <div id="terminal-overlay" class="hidden">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="red-dot"></div>
+                <div class="yellow-dot"></div>
+                <div class="green-dot"></div>
+                <span>zoltan@epitech:~</span>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+                <p>Welcome to ZoltanOS v3.0. Type <span class="cmd">help</span> to see commands.</p>
+                <div class="input-line">
+                    <span class="prompt">zoltan@epitech:~$</span>
+                    <input type="text" id="terminal-input" autofocus>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="timeline" class="fade-in">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Parcours</h2>
-                <p class="section-subtitle">Formation et expériences</p>
-            </div>
-
-            <div class="timeline-controls">
-                <button class="timeline-filter active" data-filter="all">Tous</button>
-                <button class="timeline-filter" data-filter="education">Éducation</button>
-                <button class="timeline-filter" data-filter="work">Expérience</button>
-                <button class="timeline-filter" data-filter="project">Projets</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="fade-in">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Projets</h2>
-                <p class="section-subtitle">Sélection de projets marquants</p>
-            </div>
-
-            <div class="portfolio-grid">
-                <div class="portfolio-card">
-                    <div class="portfolio-image image1"></div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Dashboard automatiser</h3>
-                        <p class="portfolio-description">Création d'un dashboard analytique reliant toutes les
-données de l'empreinte d'une société sur les réseaux
-sociaux et sur son site web, actualisé périodiquement.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Python (Django)</span>
-                            <span class="tag">SQLite</span>
-                            <span class="tag">Html</span>
-                            <span class="tag">Css</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-image image2"></div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Projet personnel</h3>
-                        <p class="portfolio-description">Création d'un server local pour héberger un site web
-personnel pour mon portfolio/cv. (zoltanbabko.fr) - toujours en cours</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Html</span>
-                            <span class="tag">Css</span>
-                            <span class="tag">Apache server</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-image image3"></div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Projet scolaire</h3>
-                        <p class="portfolio-description">Platforme d’automatisation tel que IFTTT fait de A à Z.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="fade-in">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact</h2>
-                <p class="section-subtitle">Disponible pour stage — mars 2026 à juillet 2026</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Me contacter</h3>
-                    <p>Je suis à la recherche d'un stage pour la période <strong>mars 2026 → juillet 2026</strong>. Je suis disponible pour des entretiens et des missions en présentiel à Paris ou à distance.</p>
-
-                    <div class="contact-details">
-                        <h4>Informations</h4>
-                        <ul>
-                            <li>Âge : 20 ans</li>
-                            <li>Email : <a style="color: white;" href="mailto:zoltan.babko@epitech.eu">zoltan.babko@epitech.eu</a></li>
-                            <li>Téléphone : 06 77 32 08 20</li>
-                            <li>Localisation : Paris, France</li>
-                            <li>Langues : Français (natif), Anglais (niveau 750), Espagnol (B1)</li>
-                        </ul>
-                    </div>
-
-                    <div class="contact-details">
-                        <h4>Disponible pour</h4>
-                        <ul>
-                            <li>Stage (mars → juillet 2026)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-input" id="name" placeholder="Votre nom" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-input" id="email" placeholder="Votre email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-input" id="subject" placeholder="Sujet" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-textarea" id="message" rows="5" placeholder="Message ..." required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Temporairement indisponible</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-bottom">
-            <p class="footer-copyright">© 2026 Zoltan Babko. Tous droits réservés.</p>
-            <div class="footer-credits">
-                <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer" class="footer-credit-link">
-                    <span class="footer-credit-icon">📝</span>
-                    <span>Google Fonts</span>
-                </a>
-                <a href="https://cdnjs.com" target="_blank" rel="noopener noreferrer" class="footer-credit-link">
-                    <span class="footer-credit-icon">⚡</span>
-                    <span>CDNJS</span>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="tooplate-titan-script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
