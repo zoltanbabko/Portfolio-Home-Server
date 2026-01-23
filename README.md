@@ -53,3 +53,22 @@ Une fois le mode terminal activé, les commandes suivantes sont disponibles :
 ### En local
 
 Le projet tourne localement sur un server qui pull automatiquement a chaques push afin d'actualiser la derniere update.
+
+## 📂 Structure du Projet
+
+```Bash
+.
+├── index.html      # Structure et contenu (CV)
+├── style.css       # Styles, thèmes et animations
+├── script.js       # Logique du switch et moteur du terminal
+└── README.md       # Documentation
+```
+
+## 👤 Auteur
+
+**Zoltan Babko**
+
+- 🎓 Étudiant en 3e année à Epitech Paris
+- 💼 Recherche de stage : 29 Mars 2026 - 29 Juillet 2026
+- 📧 [zoltan.babko@epitech.eu](mailto:zoltan.babko@epitech.eu)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/zoltan-babko/)
