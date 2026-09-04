@@ -17,6 +17,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<script>
+  const demoSites = [
+    "https://area-x5nk.onrender.com",
+    "https://b-dev-500-dashboard.onrender.com"
+  ];
+
+  window.addEventListener("load", () => {
+    demoSites.forEach((url) => {
+      fetch(url, {
+        method: "GET",
+        mode: "no-cors",
+        cache: "no-store"
+      }).catch(() => {});
+    });
+  });
+</script>
 <body>
     <nav class="navbar">
         <a href="index.html" class="logo">Zoltan Babko</a>
