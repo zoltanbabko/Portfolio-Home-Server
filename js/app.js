@@ -173,13 +173,24 @@ const renderJourney = () => {
     });
 };
 
+const initJourneyTabs = () => {
+    document.querySelectorAll('[data-tab]').forEach((button) => {
+        button.addEventListener('click', () => {
+            if (button.dataset.tab === state.journeyTab) return;
+            state.journeyTab = button.dataset.tab;
+            renderJourney();
+            revealElements();
+        });
+    });
+};
+
 const renderProjectFilters = () => {
     const container = document.querySelector('#project-filters');
     if (!container) return;
 
     const filters = currentContent().projects.filters;
     container.innerHTML = Object.entries(filters).map(([key, label]) => `
-        <button class="filter-button${key === state.projectFilter ? ' active' : ''}" type="button" data-filter="${escapeHtml(key)}">${escapeHtml(label)}</button>
+        <button class="filter-button${key === state.projectFilter ? ' active' : ''}" type="button" data-filter="${escapeHtml(key)}" aria-pressed="${String(key === state.projectFilter)}">${escapeHtml(label)}</button>
     `).join('');
 
     container.querySelectorAll('[data-filter]').forEach((button) => {
@@ -219,6 +230,7 @@ const renderProjects = () => {
             </article>
         `;
     }).join('');
+    revealElements();
 };
 
 const renderNeedOptions = () => {
@@ -336,6 +348,7 @@ const initLanguage = () => {
 const init = async () => {
     initMenu();
     initLanguage();
+    initJourneyTabs();
     try {
         const response = await fetch('js/content.json', { cache: 'no-store' });
         if (!response.ok) throw new Error(`content.json: ${response.status}`);
