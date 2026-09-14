@@ -1,31 +1,42 @@
 # Portfolio de Zoltan Babko
 
-Portfolio personnel de Zoltan Babko, développeur web freelance à Paris et étudiant en 4e année à Epitech.
+Portfolio multi-pages de Zoltan Babko, développeur web freelance à Paris et étudiant en 4e année à Epitech.
 
-Le site présente une sélection de projets, un parcours entre développement full-stack, Shopify/Liquid et no-code, ainsi que les services proposés en freelance.
+## Pages
 
-## Direction du site
+- `index.html` : accueil et sélecteur de besoin freelance.
+- `a-propos.html` : profil, repères et compétences.
+- `parcours.html` : expériences et formation avec onglets.
+- `projets.html` : projets avec filtres par catégorie.
+- `contact.html` : formulaire qui prépare un email sans stocker de données.
 
-- Expérience en une page avec navigation par ancres.
-- Direction artistique éditoriale : papier, grille, typographie expressive et accents corail/lime.
-- Contenu orienté collaboration : profil, expertises, projets, expériences, formation et contact.
-- Responsive desktop et mobile, sans framework lourd.
-- Animations progressives et navigation mobile en JavaScript vanilla.
+## Contenu et langues
+
+Les textes français et anglais sont dans `js/content.json`. Le fichier est chargé par `js/app.js` et le choix de langue est conservé dans le navigateur.
+
+Pour modifier un texte, il suffit de changer la valeur correspondante dans `content.json` pour `fr` et `en`.
 
 ## Stack
 
 - HTML5 sémantique
-- CSS3, Grid, Flexbox et animations
-- JavaScript ES6+
+- CSS3 avec une interface modulaire sombre, une grille technique et des accents violet/cyan
+- JavaScript vanilla
+- Données bilingues en JSON
 - Assets statiques déployés avec Cloudflare
 
-## Déploiement local
+## Lancer en local
+
+```bash
+python3 -m http.server 8080
+```
+
+Puis ouvrir `http://localhost:8080`.
+
+Pour utiliser l'environnement Cloudflare :
 
 ```bash
 npx wrangler dev
 ```
-
-La configuration Cloudflare se trouve dans `wrangler.jsonc`.
 
 ## Contact
 

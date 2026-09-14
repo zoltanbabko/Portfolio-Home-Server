@@ -1,0 +1,498 @@
+{
+  "fr": {
+    "common": {
+      "role": "Développeur web freelance",
+      "location": "Paris · France",
+      "nav": {
+        "home": "Accueil",
+        "about": "Profil",
+        "journey": "Parcours",
+        "projects": "Projets",
+        "contact": "Contact"
+      },
+      "ui": {
+        "menu": "Menu",
+        "close": "Fermer",
+        "language": "Langue",
+        "navLabel": "Navigation principale",
+        "skip": "Aller au contenu",
+        "all": "Tous",
+        "viewProject": "Voir le projet",
+        "demo": "Démo",
+        "repository": "Code source",
+        "openExternal": "Ouvre le lien dans un nouvel onglet",
+        "previous": "Précédent",
+        "next": "Suivant",
+        "emptyProjects": "Aucun projet dans cette catégorie.",
+        "formSent": "Votre message est prêt à être envoyé par email.",
+        "formError": "Merci de renseigner votre nom, votre email et votre besoin."
+      },
+      "footer": {
+        "available": "Disponible pour de nouvelles missions",
+        "copyright": "© {year} Zoltan Babko",
+        "back": "Retour en haut"
+      }
+    },
+    "home": {
+      "eyebrow": "Freelance web · Paris",
+      "title": "Développeur web freelance.",
+      "titleLead": "Développeur web",
+      "titleAccent": "freelance.",
+      "intro": "Je crée des sites, des boutiques Shopify et des outils web adaptés à votre activité.",
+      "primary": "Voir mes projets",
+      "secondary": "Parler de votre besoin",
+      "status": "Disponible pour une mission",
+      "educationFact": "Epitech / 4e année",
+      "panelCode": "ZB / WORKSPACE / 2026",
+      "panelTitle": "Quel est votre besoin ?",
+      "panelText": "Sélectionnez un sujet pour voir comment je peux vous aider.",
+      "selectorLabel": "Votre besoin",
+      "selectedLabel": "Ce que je peux prendre en charge",
+      "serviceCta": "Décrire ce besoin",
+      "services": [
+        {
+          "id": "site",
+          "label": "Site vitrine",
+          "title": "Structure, intégration et mise en ligne",
+          "description": "Un site clair, responsive et facile à faire évoluer pour présenter votre activité.",
+          "deliverables": ["Architecture des pages", "UI et intégration front-end", "Performance et mise en ligne"]
+        },
+        {
+          "id": "shopify",
+          "label": "Shopify / Liquid",
+          "title": "Une boutique adaptée à vos produits",
+          "description": "Personnalisation de thème, sections Liquid et amélioration du parcours d'achat.",
+          "deliverables": ["Sections sur mesure", "Contenus et CMS", "Responsive et UI/UX"]
+        },
+        {
+          "id": "nocode",
+          "label": "No-code / CMS",
+          "title": "Un site que vous pouvez gérer",
+          "description": "Création ou reprise d'un site Wix, Webflow ou CMS avec une structure simple à maintenir.",
+          "deliverables": ["Pages et collections", "Automatisations", "Prise en main du contenu"]
+        },
+        {
+          "id": "app",
+          "label": "Application web",
+          "title": "Un outil web pour votre activité",
+          "description": "Développement d'interfaces, de dashboards et de backends adaptés à un besoin métier.",
+          "deliverables": ["Cadrage fonctionnel", "Python / Django / React", "Données et interfaces"]
+        }
+      ],
+      "workEyebrow": "Aperçu",
+      "workTitle": "Projets récents",
+      "workText": "Quelques réalisations où le développement, le design et les besoins concrets se rencontrent.",
+      "viewAll": "Voir tous les projets",
+      "aboutEyebrow": "En bref",
+      "aboutTitle": "Développement web, Shopify et no-code.",
+      "aboutText": "Je suis en 4e année à Epitech Paris et je travaille aujourd'hui comme développeur web freelance. Mon expérience couvre le full-stack, Shopify/Liquid, les CMS et le no-code.",
+      "aboutLink": "Découvrir le profil"
+    },
+    "about": {
+      "eyebrow": "Profil",
+      "title": "Profil et compétences.",
+      "intro": "Je développe des sites et des outils web en choisissant une solution adaptée au besoin.",
+      "paragraph": "Mon parcours a commencé par la résolution de problèmes matériels, puis la programmation au collège et au lycée. À Epitech, j'ai développé des projets en C, Python, web et data. Mes expériences en agence, en entreprise et comme Game Master m'ont appris à travailler avec des contraintes réelles et des personnes différentes.",
+      "contactLink": "Me contacter",
+      "factsTitle": "Repères",
+      "facts": [
+        {"label": "Formation", "value": "4e année · Epitech Paris"},
+        {"label": "Mobilité", "value": "Paris · Long Beach"},
+        {"label": "Langues", "value": "Français · anglais · espagnol"},
+        {"label": "Statut", "value": "Freelance web"}
+      ],
+      "skillsTitle": "Compétences",
+      "skillGroups": [
+        {"title": "Développement", "items": "C · C# · Python · JavaScript · HTML / CSS · .NET"},
+        {"title": "Web & produit", "items": "React · Django · Shopify · Liquid · Wix · CMS"},
+        {"title": "Données & outils", "items": "PostgreSQL · SQLite · Docker · Linux · Git"}
+      ],
+      "photoAlt": "Portrait de Zoltan Babko"
+    },
+    "journey": {
+      "eyebrow": "Parcours",
+      "title": "Expérience & formation.",
+      "intro": "Des expériences professionnelles variées, avec un fil conducteur : apprendre vite et livrer quelque chose d'utilisable.",
+      "experienceTab": "Expériences",
+      "educationTab": "Formation",
+      "experience": [
+        {
+          "date": "Aujourd'hui",
+          "company": "Activité indépendante",
+          "role": "Développeur web freelance",
+          "description": "Missions web, Shopify/Liquid, no-code, CMS et outils sur mesure, de la structure à l'optimisation."
+        },
+        {
+          "date": "Avr. - Juil. 2026",
+          "company": "Marie-Louise Orlach® · Paris",
+          "role": "Développeur Web Liquid / No Code Shopify",
+          "description": "Intégration de pages, personnalisation Liquid, fonctionnalités sur mesure, UI/UX, CMS, responsive, performance et communication digitale."
+        },
+        {
+          "date": "Sept. 2025 - Juil. 2026",
+          "company": "Rashomon Escape · Paris",
+          "role": "Animateur polyvalent / Game Master",
+          "description": "Animation de sessions scénarisées, gestion du public, maintien de l'immersion et adaptation en temps réel."
+        },
+        {
+          "date": "Sept. 2025 - Févr. 2026",
+          "company": "Agence Piscines & Spas 60/02 · Villers-Cotterêts",
+          "role": "Développeur Web / No-code",
+          "description": "Modification du site existant et création en parallèle d'un site vitrine no-code."
+        },
+        {
+          "date": "Sept. - Déc. 2024",
+          "company": "Alltoo · Paris",
+          "role": "Développeur Full Stack",
+          "description": "Stage en Python/Django et HTML/CSS/JS : maintenance de CRM, analyse de données et participation aux interfaces web."
+        }
+      ],
+      "education": [
+        {
+          "date": "2023 - 2028",
+          "school": "Epitech · Paris",
+          "degree": "Expert en ingénierie logicielle",
+          "description": "Titre RNCP niveau 7 · pédagogie par projets."
+        },
+        {
+          "date": "2026 - 2027",
+          "school": "California State University, Long Beach",
+          "degree": "Computer and Information Sciences",
+          "description": "Programme d'échange universitaire."
+        },
+        {
+          "date": "Parcours",
+          "school": "Lycée Européen",
+          "degree": "Baccalauréat général",
+          "description": "Formation secondaire."
+        }
+      ]
+    },
+    "projects": {
+      "eyebrow": "Projets",
+      "title": "Projets sélectionnés.",
+      "intro": "Des projets personnels et professionnels qui montrent différentes façons de construire pour le web.",
+      "filters": {"all": "Tous", "fullstack": "Full-stack", "nocode": "No-code", "infrastructure": "Infrastructure"},
+      "filterLabel": "Filtrer les projets",
+      "items": [
+        {
+          "id": "area",
+          "category": "fullstack",
+          "type": "Application web",
+          "title": "AREA",
+          "description": "Plateforme d'automatisation inspirée d'IFTTT, développée pour connecter plusieurs services web.",
+          "image": "assets/images/area.png",
+          "alt": "Aperçu de la plateforme AREA",
+          "tags": ["Python", "PostgreSQL", "React", "Flutter"],
+          "demo": "https://area-x5nk.onrender.com",
+          "repo": "https://github.com/zoltanbabko/area"
+        },
+        {
+          "id": "aps",
+          "category": "nocode",
+          "type": "Site vitrine",
+          "title": "Agence Piscines & Spas 60/02",
+          "description": "Site vitrine no-code avec collections et automatisations pour simplifier la gestion du contenu.",
+          "image": "assets/images/aps.png",
+          "alt": "Aperçu du site Agence Piscines et Spas",
+          "tags": ["Wix", "CMS", "Automatisation"],
+          "demo": "https://www.agencepiscines.com",
+          "repo": ""
+        },
+        {
+          "id": "dashboard",
+          "category": "fullstack",
+          "type": "Dashboard",
+          "title": "Dashboard Widgets",
+          "description": "Tableau de bord modulable avec widgets ajoutables, supprimables et réorganisables.",
+          "image": "assets/images/dashboard_widgets.png",
+          "alt": "Aperçu du dashboard de widgets",
+          "tags": ["React", "Python", "SQLite"],
+          "demo": "https://b-dev-500-dashboard.onrender.com/",
+          "repo": "https://github.com/zoltanbabko/B-DEV-500_dashboard"
+        },
+        {
+          "id": "home-server",
+          "category": "infrastructure",
+          "type": "Projet personnel",
+          "title": "Portfolio & Home Server",
+          "description": "Portfolio hébergé sur un serveur local, avec infrastructure et mise en ligne via Cloudflare.",
+          "image": "assets/images/portfolio.png",
+          "alt": "Aperçu du portfolio et de son infrastructure",
+          "tags": ["Linux", "Docker", "Cloudflare"],
+          "demo": "",
+          "repo": "https://github.com/zoltanbabko/Portfolio-Home-Server"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Parlons de votre projet.",
+      "intro": "Décrivez votre besoin en quelques lignes. Le bouton ci-dessous préparera un email avec les informations renseignées.",
+      "emailLabel": "Email direct",
+      "phoneLabel": "Téléphone",
+      "linksLabel": "Liens",
+      "form": {
+        "name": "Votre nom",
+        "namePlaceholder": "Nom ou entreprise",
+        "email": "Votre email",
+        "emailPlaceholder": "vous@exemple.com",
+        "need": "Votre besoin",
+        "needPlaceholder": "Choisir une catégorie",
+        "needs": {"site": "Site vitrine", "shopify": "Shopify / Liquid", "nocode": "No-code / CMS", "app": "Application web", "other": "Autre besoin"},
+        "message": "Quelques détails",
+        "messagePlaceholder": "Objectif, délai, lien vers l'existant...",
+        "submit": "Préparer l'email",
+        "privacy": "Aucune donnée n'est stockée sur ce site."
+      }
+    }
+  },
+  "en": {
+    "common": {
+      "role": "Freelance web developer",
+      "location": "Paris · France",
+      "nav": {
+        "home": "Home",
+        "about": "Profile",
+        "journey": "Background",
+        "projects": "Projects",
+        "contact": "Contact"
+      },
+      "ui": {
+        "menu": "Menu",
+        "close": "Close",
+        "language": "Language",
+        "navLabel": "Main navigation",
+        "skip": "Skip to content",
+        "all": "All",
+        "viewProject": "View project",
+        "demo": "Live demo",
+        "repository": "Source code",
+        "openExternal": "Opens the link in a new tab",
+        "previous": "Previous",
+        "next": "Next",
+        "emptyProjects": "No project in this category.",
+        "formSent": "Your message is ready to be sent by email.",
+        "formError": "Please enter your name, email and project need."
+      },
+      "footer": {
+        "available": "Available for new projects",
+        "copyright": "© {year} Zoltan Babko",
+        "back": "Back to top"
+      }
+    },
+    "home": {
+      "eyebrow": "Freelance web · Paris",
+      "title": "Freelance web developer.",
+      "titleLead": "Freelance web",
+      "titleAccent": "developer.",
+      "intro": "I build websites, Shopify stores and web tools adapted to your business.",
+      "primary": "View my projects",
+      "secondary": "Discuss your need",
+      "status": "Available for a project",
+      "educationFact": "Epitech / 4th year",
+      "panelCode": "ZB / WORKSPACE / 2026",
+      "panelTitle": "What do you need?",
+      "panelText": "Select a topic to see how I can help.",
+      "selectorLabel": "Your need",
+      "selectedLabel": "What I can deliver",
+      "serviceCta": "Describe this need",
+      "services": [
+        {
+          "id": "site",
+          "label": "Business website",
+          "title": "Structure, build and launch",
+          "description": "A clear, responsive website that is easy to improve as your business grows.",
+          "deliverables": ["Page structure", "UI and front-end build", "Performance and launch"]
+        },
+        {
+          "id": "shopify",
+          "label": "Shopify / Liquid",
+          "title": "A store adapted to your products",
+          "description": "Theme customization, Liquid sections and improvements to the shopping journey.",
+          "deliverables": ["Custom sections", "Content and CMS", "Responsive UI/UX"]
+        },
+        {
+          "id": "nocode",
+          "label": "No-code / CMS",
+          "title": "A site you can manage",
+          "description": "A new or existing Wix, Webflow or CMS site with a simple content structure.",
+          "deliverables": ["Pages and collections", "Automations", "Content handover"]
+        },
+        {
+          "id": "app",
+          "label": "Web application",
+          "title": "A web tool for your business",
+          "description": "Interfaces, dashboards and backends adapted to a practical business need.",
+          "deliverables": ["Functional scope", "Python / Django / React", "Data and interfaces"]
+        }
+      ],
+      "workEyebrow": "Selected work",
+      "workTitle": "Recent projects",
+      "workText": "A few projects where development, design and real needs come together.",
+      "viewAll": "View all projects",
+      "aboutEyebrow": "About",
+      "aboutTitle": "Web development, Shopify and no-code.",
+      "aboutText": "I am a fourth-year student at Epitech Paris and I currently work as a freelance web developer. My experience covers full-stack development, Shopify/Liquid, CMS and no-code.",
+      "aboutLink": "Discover the profile"
+    },
+    "about": {
+      "eyebrow": "Profile",
+      "title": "Profile and skills.",
+      "intro": "I build websites and web tools with a solution adapted to the project need.",
+      "paragraph": "My path started with hardware problem solving, then programming in school. At Epitech, I built projects in C, Python, web and data. My experiences in agencies, companies and as a Game Master taught me to work with real constraints and different kinds of people.",
+      "contactLink": "Contact me",
+      "factsTitle": "Key facts",
+      "facts": [
+        {"label": "Education", "value": "4th year · Epitech Paris"},
+        {"label": "Location", "value": "Paris · Long Beach"},
+        {"label": "Languages", "value": "French · English · Spanish"},
+        {"label": "Status", "value": "Freelance web"}
+      ],
+      "skillsTitle": "Skills",
+      "skillGroups": [
+        {"title": "Development", "items": "C · C# · Python · JavaScript · HTML / CSS · .NET"},
+        {"title": "Web & product", "items": "React · Django · Shopify · Liquid · Wix · CMS"},
+        {"title": "Data & tools", "items": "PostgreSQL · SQLite · Docker · Linux · Git"}
+      ],
+      "photoAlt": "Portrait of Zoltan Babko"
+    },
+    "journey": {
+      "eyebrow": "Background",
+      "title": "Experience and education.",
+      "intro": "Different professional experiences, with a focus on learning quickly and delivering useful work.",
+      "experienceTab": "Experience",
+      "educationTab": "Education",
+      "experience": [
+        {
+          "date": "Now",
+          "company": "Independent work",
+          "role": "Freelance web developer",
+          "description": "Web, Shopify/Liquid, no-code, CMS and custom tool projects, from structure to optimization."
+        },
+        {
+          "date": "Apr. - Jul. 2026",
+          "company": "Marie-Louise Orlach® · Paris",
+          "role": "Liquid / No-code Shopify Web Developer",
+          "description": "Page integration, Liquid customization, custom features, UI/UX, CMS, responsive work, performance and digital communication."
+        },
+        {
+          "date": "Sept. 2025 - Jul. 2026",
+          "company": "Rashomon Escape · Paris",
+          "role": "Game Master / Activity Host",
+          "description": "Hosted scripted sessions, managed groups, maintained immersion and adapted in real time."
+        },
+        {
+          "date": "Sept. 2025 - Feb. 2026",
+          "company": "Agence Piscines & Spas 60/02 · Villers-Cotterêts",
+          "role": "Web / No-code Developer",
+          "description": "Updated the existing website and created a new no-code showcase website in parallel."
+        },
+        {
+          "date": "Sept. - Dec. 2024",
+          "company": "Alltoo · Paris",
+          "role": "Full-stack Developer",
+          "description": "Python/Django and HTML/CSS/JS internship: CRM maintenance, data analysis and web interfaces."
+        }
+      ],
+      "education": [
+        {
+          "date": "2023 - 2028",
+          "school": "Epitech · Paris",
+          "degree": "Expert in Software Engineering",
+          "description": "RNCP level 7 · project-based learning."
+        },
+        {
+          "date": "2026 - 2027",
+          "school": "California State University, Long Beach",
+          "degree": "Computer and Information Sciences",
+          "description": "University exchange program."
+        },
+        {
+          "date": "Education",
+          "school": "Lycée Européen",
+          "degree": "General Baccalaureate",
+          "description": "Secondary education."
+        }
+      ]
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "title": "Selected projects.",
+      "intro": "Personal and professional projects showing different ways to build for the web.",
+      "filters": {"all": "All", "fullstack": "Full-stack", "nocode": "No-code", "infrastructure": "Infrastructure"},
+      "filterLabel": "Filter projects",
+      "items": [
+        {
+          "id": "area",
+          "category": "fullstack",
+          "type": "Web application",
+          "title": "AREA",
+          "description": "An IFTTT-inspired automation platform built to connect several web services.",
+          "image": "assets/images/area.png",
+          "alt": "AREA automation platform preview",
+          "tags": ["Python", "PostgreSQL", "React", "Flutter"],
+          "demo": "https://area-x5nk.onrender.com",
+          "repo": "https://github.com/zoltanbabko/area"
+        },
+        {
+          "id": "aps",
+          "category": "nocode",
+          "type": "Business website",
+          "title": "Agence Piscines & Spas 60/02",
+          "description": "A no-code showcase website with collections and automations for easier content management.",
+          "image": "assets/images/aps.png",
+          "alt": "Agence Piscines and Spas website preview",
+          "tags": ["Wix", "CMS", "Automation"],
+          "demo": "https://www.agencepiscines.com",
+          "repo": ""
+        },
+        {
+          "id": "dashboard",
+          "category": "fullstack",
+          "type": "Dashboard",
+          "title": "Dashboard Widgets",
+          "description": "A modular dashboard where users can add, remove and reorder widgets.",
+          "image": "assets/images/dashboard_widgets.png",
+          "alt": "Widgets dashboard preview",
+          "tags": ["React", "Python", "SQLite"],
+          "demo": "https://b-dev-500-dashboard.onrender.com/",
+          "repo": "https://github.com/zoltanbabko/B-DEV-500_dashboard"
+        },
+        {
+          "id": "home-server",
+          "category": "infrastructure",
+          "type": "Personal project",
+          "title": "Portfolio & Home Server",
+          "description": "A portfolio hosted on a local server, with infrastructure and Cloudflare deployment.",
+          "image": "assets/images/portfolio.png",
+          "alt": "Portfolio and infrastructure preview",
+          "tags": ["Linux", "Docker", "Cloudflare"],
+          "demo": "",
+          "repo": "https://github.com/zoltanbabko/Portfolio-Home-Server"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Let's discuss your project.",
+      "intro": "Describe your need in a few lines. The button below will prepare an email with the information you entered.",
+      "emailLabel": "Direct email",
+      "phoneLabel": "Phone",
+      "linksLabel": "Links",
+      "form": {
+        "name": "Your name",
+        "namePlaceholder": "Name or company",
+        "email": "Your email",
+        "emailPlaceholder": "you@example.com",
+        "need": "Your need",
+        "needPlaceholder": "Choose a category",
+        "needs": {"site": "Business website", "shopify": "Shopify / Liquid", "nocode": "No-code / CMS", "app": "Web application", "other": "Other need"},
+        "message": "A few details",
+        "messagePlaceholder": "Goal, timeline, existing link...",
+        "submit": "Prepare email",
+        "privacy": "No data is stored on this website."
+      }
+    }
+  }
+}

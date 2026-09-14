@@ -3,19 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=index.html#projets">
     <meta name="description" content="Projets de Zoltan Babko, développeur web freelance.">
-    <title>Projets - Zoltan Babko</title>
+    <meta name="theme-color" content="#0d1117">
+    <title>Zoltan Babko | Projets</title>
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <main class="redirect-page section-frame">
-        <div class="redirect-card">
-            <span class="brand-mark">ZB</span>
-            <p>Les projets de Zoltan ont été intégrés à la nouvelle expérience.</p>
-            <a class="button button-dark" href="index.html#projets">Voir les projets <span aria-hidden="true">↗</span></a>
-        </div>
+<body data-page="projects">
+    <a class="skip-link" href="#main-content" data-i18n="common.ui.skip">Aller au contenu</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Zoltan Babko"><span class="brand-mark">ZB</span><span class="brand-details">Zoltan Babko<small data-i18n="common.role">Développeur web freelance</small></span></a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span data-i18n="common.ui.menu">Menu</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span></button>
+        <nav class="site-menu" id="site-menu" data-i18n-attr="aria-label:common.ui.navLabel" aria-label="Navigation principale">
+            <a data-nav="home" href="index.html" data-i18n="common.nav.home">Accueil</a><a data-nav="about" href="a-propos.html" data-i18n="common.nav.about">Profil</a><a data-nav="journey" href="parcours.html" data-i18n="common.nav.journey">Parcours</a><a data-nav="projects" href="projets.html" data-i18n="common.nav.projects">Projets</a><a data-nav="contact" href="contact.html" data-i18n="common.nav.contact">Contact</a>
+            <div class="language-switch" data-i18n-attr="aria-label:common.ui.language" aria-label="Langue"><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div>
+        </nav>
+    </header>
+
+    <main class="page-main" id="main-content">
+        <header class="page-heading content-width reveal">
+            <span class="page-index">04 / 05</span>
+            <div><p class="eyebrow" data-i18n="projects.eyebrow">Projets</p><h1 data-i18n="projects.title">Projets sélectionnés.</h1><p class="intro" data-i18n="projects.intro">Des projets personnels et professionnels qui montrent différentes façons de construire pour le web.</p></div>
+            <p class="page-note">HTML / CSS / JS<br>Python / React / CMS</p>
+        </header>
+
+        <section class="content-width section-block">
+            <div class="projects-toolbar reveal">
+                <div class="filter-list" id="project-filters" role="group" data-i18n-attr="aria-label:projects.filterLabel" aria-label="Filtrer les projets"></div>
+                <span class="project-count" id="project-count"></span>
+            </div>
+            <div class="projects-grid" id="project-grid"></div>
+        </section>
     </main>
+
+    <footer class="site-footer content-width"><span class="footer-meta" data-i18n="common.footer.copyright">© 2026 Zoltan Babko</span><span class="footer-meta" data-i18n="common.footer.available">Disponible pour de nouvelles missions</span><a href="contact.html" data-i18n="common.nav.contact">Contact</a></footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

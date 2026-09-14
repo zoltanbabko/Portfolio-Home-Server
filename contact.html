@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacter Zoltan Babko pour un projet web freelance.">
+    <meta name="theme-color" content="#0d1117">
+    <title>Zoltan Babko | Contact</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="contact">
+    <a class="skip-link" href="#main-content" data-i18n="common.ui.skip">Aller au contenu</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Zoltan Babko"><span class="brand-mark">ZB</span><span class="brand-details">Zoltan Babko<small data-i18n="common.role">Développeur web freelance</small></span></a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span data-i18n="common.ui.menu">Menu</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span></button>
+        <nav class="site-menu" id="site-menu" data-i18n-attr="aria-label:common.ui.navLabel" aria-label="Navigation principale">
+            <a data-nav="home" href="index.html" data-i18n="common.nav.home">Accueil</a><a data-nav="about" href="a-propos.html" data-i18n="common.nav.about">Profil</a><a data-nav="journey" href="parcours.html" data-i18n="common.nav.journey">Parcours</a><a data-nav="projects" href="projets.html" data-i18n="common.nav.projects">Projets</a><a data-nav="contact" href="contact.html" data-i18n="common.nav.contact">Contact</a>
+            <div class="language-switch" data-i18n-attr="aria-label:common.ui.language" aria-label="Langue"><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div>
+        </nav>
+    </header>
+
+    <main class="page-main" id="main-content">
+        <header class="page-heading content-width reveal">
+            <span class="page-index">05 / 05</span>
+            <div><p class="eyebrow" data-i18n="contact.eyebrow">Contact</p><h1 data-i18n="contact.title">Parlons de votre projet.</h1><p class="intro" data-i18n="contact.intro">Décrivez votre besoin en quelques lignes. Le bouton ci-dessous préparera un email avec les informations renseignées.</p></div>
+            <p class="page-note">zoltan.babko@epitech.eu<br>06 77 32 08 20</p>
+        </header>
+
+        <section class="contact-layout content-width section-block">
+            <div class="contact-copy reveal">
+                <h2><span data-i18n="contact.emailLabel">Email direct</span></h2>
+                <div class="contact-details">
+                    <div class="contact-detail"><span data-i18n="contact.emailLabel">Email direct</span><a href="mailto:zoltan.babko@epitech.eu">zoltan.babko@epitech.eu</a></div>
+                    <div class="contact-detail"><span data-i18n="contact.phoneLabel">Téléphone</span><a href="tel:+33677320820">06 77 32 08 20</a></div>
+                    <div class="contact-detail"><span data-i18n="contact.linksLabel">Liens</span><a href="https://www.linkedin.com/in/zoltan-babko/" target="_blank" rel="noreferrer">LinkedIn ↗</a><br><a href="https://github.com/zoltanbabko" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+                </div>
+            </div>
+
+            <form class="contact-form reveal delay-1" id="contact-form">
+                <div class="form-grid">
+                    <div class="field"><label for="name" data-i18n="contact.form.name">Votre nom</label><input id="name" name="name" type="text" autocomplete="name" required data-i18n-attr="placeholder:contact.form.namePlaceholder" placeholder="Nom ou entreprise"></div>
+                    <div class="field"><label for="email" data-i18n="contact.form.email">Votre email</label><input id="email" name="email" type="email" autocomplete="email" required data-i18n-attr="placeholder:contact.form.emailPlaceholder" placeholder="vous@exemple.com"></div>
+                    <div class="field field--full"><label for="need" data-i18n="contact.form.need">Votre besoin</label><select id="need" name="need" required><option value="" data-i18n="contact.form.needPlaceholder">Choisir une catégorie</option></select></div>
+                    <div class="field field--full"><label for="message" data-i18n="contact.form.message">Quelques détails</label><textarea id="message" name="message" required data-i18n-attr="placeholder:contact.form.messagePlaceholder" placeholder="Objectif, délai, lien vers l'existant..."></textarea></div>
+                </div>
+                <div class="form-bottom"><span class="form-note" data-i18n="contact.form.privacy">Aucune donnée n'est stockée sur ce site.</span><button class="button button-primary" type="submit"><span data-i18n="contact.form.submit">Préparer l'email</span><span aria-hidden="true">↗</span></button></div>
+                <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer content-width"><span class="footer-meta" data-i18n="common.footer.copyright">© 2026 Zoltan Babko</span><span class="footer-meta" data-i18n="common.footer.available">Disponible pour de nouvelles missions</span><a href="index.html" data-i18n="common.nav.home">Accueil</a></footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
