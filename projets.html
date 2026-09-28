@@ -1,104 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R53XW4SCFG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-R53XW4SCFG');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Projets | Zoltan Babko</title>
+    <meta name="description" content="Projets de Zoltan Babko, développeur web &amp; logiciel freelance.">
+    <meta name="theme-color" content="#0d1117">
+    <title>Zoltan Babko | Projets</title>
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Zoltan Babko</a>
-        
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    
-        <ul class="nav-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="parcours.html">Parcours</a></li>
-            <li><a href="projets.html" class="active">Projets</a></li>
-        </ul>
-    </nav>
+<body data-page="projects">
+    <a class="skip-link" href="#main-content" data-i18n="common.ui.skip">Aller au contenu</a>
 
-    <main class="page-container">
-        <header class="page-header">
-            <h2>Mes <span class="highlight">Réalisations</span></h2>
-            <p>Découvrez une sélection de mes projets techniques, alliant architecture backend et interfaces interactives.</p>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Zoltan Babko"><span class="brand-details">Zoltan Babko<small data-i18n="common.role">Développeur web &amp; logiciel freelance</small></span></a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span data-i18n="common.ui.menu">Menu</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span></button>
+        <nav class="site-menu" id="site-menu" data-i18n-attr="aria-label:common.ui.navLabel" aria-label="Navigation principale">
+            <a data-nav="home" href="index.html" data-i18n="common.nav.home">Accueil</a><a data-nav="about" href="a-propos.html" data-i18n="common.nav.about">Profil</a><a data-nav="journey" href="parcours.html" data-i18n="common.nav.journey">Parcours</a><a data-nav="projects" href="projets.html" data-i18n="common.nav.projects">Projets</a><a data-nav="contact" href="contact.html" data-i18n="common.nav.contact">Contact</a>
+            <div class="language-switch" data-i18n-attr="aria-label:common.ui.language" aria-label="Langue"><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div>
+        </nav>
+    </header>
+
+    <main class="page-main" id="main-content">
+        <header class="page-heading content-width reveal">
+            <span class="page-index">04 / 05</span>
+            <div><p class="eyebrow" data-i18n="projects.eyebrow">Projets</p><h1 data-i18n="projects.title">Projets sélectionnés.</h1><p class="intro" data-i18n="projects.intro">Des projets personnels et professionnels qui montrent différentes façons de construire pour le web.</p></div>
+            <p class="page-note">HTML / CSS / JS<br>Python / React / CMS</p>
         </header>
 
-        <div class="projects-grid">
-            <article class="project-card fade-in">
-                <div class="project-image">
-                    <img src="assets/images/area.png" alt="Plateforme AREA">
-                </div>
-                <div class="project-info">
-                    <h3>Plateforme d'Automatisation (Clone IFTTT)</h3>
-                    <p>Développement de A à Z d'une plateforme d'automatisation. Architecture complexe permettant de lier différents services web entre eux.</p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>PostgreSQL</span><span>React</span><span>Flutter</span>
-                    </div>
-                    <a href="https://github.com/zoltanbabko/area" target="_blank" class="project-link">Voir sur GitHub &rarr;</a>
-                    <a href="https://area-x5nk.onrender.com" target="_blank" class="project-link">Voir la démo &rarr;</a>
-                </div>
-            </article>
-
-            <article class="project-card fade-in">
-                <div class="project-image">
-                    <img src="assets/images/aps.png" alt="Site Web NoCode CMS WIX">
-                </div>
-                <div class="project-info">
-                    <h3>Site Web NoCode (CMS Wix)</h3>
-                    <p>Conception et réalisation d'un site web NoCode de A à Z, fonctionnel et accessible à tous pour l'entreprise Agence Piscines & Spas 60/02. J'ai aussi créé des automatisations pour certaines réactions de formulaire reçus.</p>
-                    <div class="tech-stack">
-                        <span>CMS</span><span>Wix</span><span>Collection</span><span>Automatisation</span>
-                    </div>
-                    <a href="https://www.agencepiscines.com" target="_blank" class="project-link">Voir le site &rarr;</a>
-                </div>
-            </article>
-
-            <article class="project-card fade-in">
-                <div class="project-image">
-                    <img src="assets/images/dashboard_widgets.png" alt="Dashboard React">
-                </div>
-                <div class="project-info">
-                    <h3>Dashboard Widgets Interactif</h3>
-                    <p>Tableau de bord modulable. Les utilisateurs peuvent ajouter, supprimer et réorganiser des widgets (Google, NASA, Github).</p>
-                    <div class="tech-stack">
-                        <span>React</span><span>DaisyUI</span><span>Python</span><span>SQLite</span>
-                    </div>
-                    <a href="https://b-dev-500-dashboard.onrender.com/" target="_blank" class="project-link">Voir la démo &rarr;</a>
-                    <a href="https://github.com/zoltanbabko/B-DEV-500_dashboard" target="_blank" class="project-link">Voir sur GitHub &rarr;</a>
-                </div>
-            </article>
-
-            <article class="project-card fade-in">
-                <div class="project-image">
-                    <img src="assets/images/portfolio.png" alt="Home Server">
-                </div>
-                <div class="project-info">
-                    <h3>Home Server & Infrastructure</h3>
-                    <p>Configuration et mise en place d'un serveur local (Linux) pour l'hébergement de mon portfolio avec déploiement continu.</p>
-                    <div class="tech-stack">
-                        <span>Linux</span><span>Réseau</span><span>Docker</span>
-                    </div>
-                </div>
-            </article>
-        </div>
+        <section class="content-width section-block">
+            <div class="projects-toolbar reveal">
+                <div class="filter-list" id="project-filters" role="group" data-i18n-attr="aria-label:projects.filterLabel" aria-label="Filtrer les projets"></div>
+                <span class="project-count" id="project-count"></span>
+            </div>
+            <div class="projects-grid" id="project-grid"></div>
+        </section>
     </main>
 
-    <script src="js/script.js"></script>
+    <footer class="site-footer content-width"><span class="footer-meta" data-i18n="common.footer.copyright">© 2026 Zoltan Babko</span><span class="footer-meta" data-i18n="common.footer.available">Disponible pour de nouvelles missions</span><a href="contact.html" data-i18n="common.nav.contact">Contact</a></footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

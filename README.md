@@ -1,74 +1,45 @@
-# 💻 Portfolio CV - Zoltan Babko
+# Portfolio de Zoltan Babko
 
-![Epitech Student](https://img.shields.io/badge/Student-Epitech-005fa3?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Open_to_Work-green?style=flat-square)
-![Stack](https://img.shields.io/badge/Tech-HTML_CSS_JS-yellow?style=flat-square)
+Portfolio multi-pages de Zoltan Babko, développeur web freelance à Paris et étudiant en 4e année à Epitech.
 
-Un site portfolio interactif conçu avec une approche **"Dual Mode"** : une interface graphique moderne (GUI) pour les RH et un mode Terminal interactif pour les profils techniques.
+## Pages
 
-Ce projet a été développé pour présenter mon parcours d'étudiant à **Epitech** et ma recherche de stage de mars à juillet 2026.
+- `index.html` : accueil et sélecteur de besoin freelance.
+- `a-propos.html` : profil, repères et compétences.
+- `parcours.html` : expériences et formation avec onglets.
+- `projets.html` : projets avec filtres par catégorie.
+- `contact.html` : formulaire qui prépare un email sans stocker de données.
 
-## 🚀 Demo En Ligne
+## Contenu et langues
 
-Voir le site en direct : [zoltanbabko.fr](https://zoltanbabko.fr)
+Les textes français et anglais sont dans `js/content.json`. Le fichier est chargé par `js/app.js` et le choix de langue est conservé dans le navigateur.
 
-## ✨ Fonctionnalités
+Pour modifier un texte, il suffit de changer la valeur correspondante dans `content.json` pour `fr` et `en`.
 
-### 1. Mode GUI (Interface Graphique)
-- Design **Dark Mode** moderne et épuré.
-- Effets de **Glassmorphism**.
-- Entièrement **Responsive** (Mobile & Desktop).
-- Présentation claire des compétences, expériences et projets.
+## Stack
 
-### 2. Mode Terminal (Hacker Mode) 👨‍💻
-- Accessible via un "Toggle Switch" en haut de page.
-- Émulation d'un terminal Linux dans le navigateur.
-- **Système de commandes interactif** parsé en JavaScript.
-- Historique des commandes et auto-scroll.
+- HTML5 sémantique
+- CSS3 avec une interface modulaire sombre, une grille technique et des accents violet/cyan
+- JavaScript vanilla
+- Données bilingues en JSON
+- Assets statiques déployés avec Cloudflare
 
-## 🛠️ Stack Technique
+## Lancer en local
 
-Ce projet est réalisé sans framework lourd pour garantir une performance maximale et démontrer une maîtrise du DOM vanilla.
-
-- **HTML5** : Structure sémantique.
-- **CSS3** : Utilisation des variables CSS (`:root`), Flexbox, Grid et animations.
-- **JavaScript (ES6+)** : Gestion des événements, manipulation du DOM et logique du terminal.
-
-## ⌨️ Commandes du Terminal
-
-Une fois le mode terminal activé, les commandes suivantes sont disponibles :
-
-| Commande | Description |
-| :--- | :--- |
-| `help` | Affiche la liste des commandes disponibles. |
-| `about` | Résumé de mon profil et de ma recherche de stage. |
-| `skills` | Affiche ma stack technique (C, Python, React, Docker...). |
-| `exp` | Liste mes expériences pro (Agence Piscines, Rashomon, Alltoo...). |
-| `contact` | Affiche mes coordonnées (Email, LinkedIn, GitHub). |
-| `clear` | Nettoie l'écran du terminal. |
-| `exit` | Quitte le mode terminal et retourne au GUI. |
-
-## 📦 Installation & Déploiement
-
-### En local
-
-Le projet tourne localement sur un server qui pull automatiquement a chaques push afin d'actualiser la derniere update.
-
-## 📂 Structure du Projet
-
-```Bash
-.
-├── index.html      # Structure et contenu (CV)
-├── style.css       # Styles, thèmes et animations
-├── script.js       # Logique du switch et moteur du terminal
-└── README.md       # Documentation
+```bash
+python3 -m http.server 8080
 ```
 
-## 👤 Auteur
+Puis ouvrir `http://localhost:8080`.
 
-**Zoltan Babko**
+Pour utiliser l'environnement Cloudflare :
 
-- 🎓 Étudiant en 3e année à Epitech Paris
-- 💼 Recherche de stage : 29 Mars 2026 - 29 Juillet 2026
-- 📧 [zoltan.babko@epitech.eu](mailto:zoltan.babko@epitech.eu)
-- 🔗 [LinkedIn](https://www.linkedin.com/in/zoltan-babko/)
+```bash
+npx wrangler dev
+```
+
+## Contact
+
+- Email : zoltan.babko@epitech.eu
+- LinkedIn : https://www.linkedin.com/in/zoltan-babko/
+- GitHub : https://github.com/zoltanbabko

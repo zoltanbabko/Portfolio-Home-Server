@@ -1,66 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R53XW4SCFG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-R53XW4SCFG');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoltan Babko | Développeur</title>
+    <meta name="description" content="Zoltan Babko, développeur web &amp; logiciel freelance à Paris. Sites vitrines, Shopify, no-code, applications et logiciels.">
+    <meta name="theme-color" content="#0d1117">
+    <title>Zoltan Babko | Développeur web &amp; logiciel</title>
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<script>
-  const demoSites = [
-    "https://area-x5nk.onrender.com",
-    "https://b-dev-500-dashboard.onrender.com"
-  ];
+<body data-page="home">
+    <a class="skip-link" href="#main-content" data-i18n="common.ui.skip">Aller au contenu</a>
 
-  window.addEventListener("load", () => {
-    demoSites.forEach((url) => {
-      fetch(url, {
-        method: "GET",
-        mode: "no-cors",
-        cache: "no-store"
-      }).catch(() => {});
-    });
-  });
-</script>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Zoltan Babko</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Zoltan Babko">
+            <span class="brand-details">Zoltan Babko<small data-i18n="common.role">Développeur web &amp; logiciel freelance</small></span>
+        </a>
 
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+            <span data-i18n="common.ui.menu">Menu</span>
+            <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
 
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="parcours.html">Parcours</a></li>
-            <li><a href="projets.html">Projets</a></li>
-        </ul>
-    </nav>
-
-    <main class="hero">
-        <div class="hero-content">
-            <span class="badge">Disponible pour un stage (29 Mars - 29 Juillet 2026)</span>
-            <h1>Je suis <span class="highlight">Zoltan Babko</span>,<br>Développeur Full-Stack.</h1>
-            <p class="subtitle">Étudiant en 3e année à Epitech Paris. Je conçois des applications web et mobile, des logiciels et des sites web no-code.</p>
-            <div class="cta-group">
-                <a href="projets.html" class="btn btn-primary">Voir mes réalisations</a>
-                <a href="a-propos.html" class="btn btn-secondary">Mieux me connaître</a>
+        <nav class="site-menu" id="site-menu" data-i18n-attr="aria-label:common.ui.navLabel" aria-label="Navigation principale">
+            <a data-nav="home" href="index.html" data-i18n="common.nav.home">Accueil</a>
+            <a data-nav="about" href="a-propos.html" data-i18n="common.nav.about">Profil</a>
+            <a data-nav="journey" href="parcours.html" data-i18n="common.nav.journey">Parcours</a>
+            <a data-nav="projects" href="projets.html" data-i18n="common.nav.projects">Projets</a>
+            <a data-nav="contact" href="contact.html" data-i18n="common.nav.contact">Contact</a>
+                <div class="language-switch" data-i18n-attr="aria-label:common.ui.language" aria-label="Langue">
+                <button type="button" data-lang="fr">FR</button>
+                <button type="button" data-lang="en">EN</button>
             </div>
-        </div>
+        </nav>
+    </header>
+
+    <main class="page-main" id="main-content">
+        <section class="hero content-width">
+            <div class="hero-copy reveal">
+                <p class="eyebrow" data-i18n="home.eyebrow">Freelance web &amp; logiciel · Paris</p>
+                <h1><span data-i18n="home.titleLead">Développeur web</span><br><span data-i18n="home.titleAccent">freelance.</span></h1>
+                <p class="hero-intro" data-i18n="home.intro">Je conçois des sites, des applications et des logiciels adaptés à vos besoins.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="projets.html"><span data-i18n="home.primary">Voir mes projets</span><span aria-hidden="true">↗</span></a>
+                    <a class="inline-link" href="contact.html"><span data-i18n="home.secondary">Parler de votre besoin</span><span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="hero-facts">
+                    <span data-i18n="home.status">Disponible pour une mission</span>
+                    <span data-i18n="common.location">Paris · France</span>
+                    <span data-i18n="home.educationFact">Epitech / 4e année</span>
+                </div>
+            </div>
+
+            <div class="module reveal delay-1" id="service-module">
+                <div class="module-bar">
+                    <span class="module-code" data-i18n="home.panelCode">ZB / WORKSPACE / 2026</span>
+                    <span class="module-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                </div>
+                <div class="module-body">
+                    <h2 data-i18n="home.panelTitle">Quel est votre besoin ?</h2>
+                    <p data-i18n="home.panelText">Sélectionnez un sujet pour voir comment je peux vous aider.</p>
+                    <p class="label" data-i18n="home.selectorLabel">Votre besoin</p>
+                    <div class="service-picker" id="service-picker" role="list"></div>
+                    <div class="service-result" aria-live="polite">
+                        <p class="label service-result-label" data-i18n="home.selectedLabel">Ce que je peux prendre en charge</p>
+                        <h3 id="service-result-title"></h3>
+                        <p id="service-result-description"></p>
+                        <ul class="deliverables" id="service-result-list"></ul>
+                        <a class="button button-primary" id="service-result-link" href="contact.html?need=site"><span data-i18n="home.serviceCta">Décrire ce besoin</span><span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-strip content-width reveal">
+            <div>
+                <p class="label strip-label" data-i18n="home.aboutEyebrow">En bref</p>
+                <h2 data-i18n="home.aboutTitle">Un profil technique, orienté usage.</h2>
+            </div>
+            <div>
+                <p data-i18n="home.aboutText">Je suis en 4e année à Epitech Paris et je travaille aujourd'hui comme développeur web &amp; logiciel freelance. Mon expérience couvre le full-stack, Shopify/Liquid, les CMS et le no-code.</p>
+                <a class="inline-link" href="a-propos.html"><span data-i18n="home.aboutLink">Découvrir le profil</span><span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="section-block content-width">
+            <div class="section-heading reveal">
+                <span class="section-number">01</span>
+                <div>
+                    <p class="label" data-i18n="home.workEyebrow">Aperçu</p>
+                    <h2 data-i18n="home.workTitle">Projets récents</h2>
+                    <p data-i18n="home.workText">Quelques réalisations où le développement, le design et les besoins concrets se rencontrent.</p>
+                </div>
+            </div>
+            <div class="mini-projects" id="featured-projects"></div>
+            <div class="section-link-row"><a class="inline-link" href="projets.html"><span data-i18n="home.viewAll">Voir tous les projets</span><span aria-hidden="true">↗</span></a></div>
+        </section>
     </main>
 
-    <script src="js/script.js"></script>
+    <footer class="site-footer content-width">
+        <span class="footer-meta" data-i18n="common.footer.copyright">© 2026 Zoltan Babko</span>
+        <span class="footer-meta" data-i18n="common.footer.available">Disponible pour de nouvelles missions</span>
+        <a href="#main-content" data-i18n="common.footer.back">Retour en haut</a>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

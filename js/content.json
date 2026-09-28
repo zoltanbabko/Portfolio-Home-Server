@@ -1,0 +1,654 @@
+{
+  "fr": {
+    "common": {
+      "role": "Développeur web & logiciel freelance",
+      "location": "Paris · France",
+      "nav": {
+        "home": "Accueil",
+        "about": "Profil",
+        "journey": "Parcours",
+        "projects": "Projets",
+        "contact": "Contact"
+      },
+      "ui": {
+        "menu": "Menu",
+        "close": "Fermer",
+        "language": "Langue",
+        "navLabel": "Navigation principale",
+        "skip": "Aller au contenu",
+        "all": "Tous",
+        "viewProject": "Voir le projet",
+        "demo": "Démo",
+        "repository": "Code source",
+        "openExternal": "Ouvre le lien dans un nouvel onglet",
+        "previous": "Précédent",
+        "next": "Suivant",
+        "emptyProjects": "Aucun projet dans cette catégorie.",
+        "formSent": "Votre message a bien été enregistré.",
+        "formError": "Merci de renseigner votre nom, votre email et votre besoin.",
+        "formServerError": "Impossible d'enregistrer le message. Réessayez dans quelques instants."
+      },
+      "footer": {
+        "available": "Disponible pour de nouvelles missions",
+        "copyright": "© {year} Zoltan Babko",
+        "back": "Retour en haut"
+      }
+    },
+    "home": {
+      "eyebrow": "Freelance web & logiciel · Paris",
+      "title": "Développeur web & logiciel freelance.",
+      "titleLead": "Développeur web & logiciel",
+      "titleAccent": "freelance.",
+      "intro": "Je conçois des sites, des applications et des logiciels adaptés à vos besoins.",
+      "primary": "Voir mes projets",
+      "secondary": "Parler de votre besoin",
+      "status": "Disponible pour une mission",
+      "educationFact": "Epitech / 4e année",
+      "panelCode": "ZB / WORKSPACE / 2026",
+      "panelTitle": "Quel est votre besoin ?",
+      "panelText": "Sélectionnez un sujet pour voir comment je peux vous aider.",
+      "selectorLabel": "Votre besoin",
+      "selectedLabel": "Ce que je peux prendre en charge",
+      "serviceCta": "Décrire ce besoin",
+      "services": [
+        {
+          "id": "site",
+          "label": "Site vitrine",
+          "title": "Structure, intégration et mise en ligne",
+          "description": "Un site clair, responsive et facile à faire évoluer pour présenter votre activité.",
+          "deliverables": [
+            "Architecture des pages",
+            "UI et intégration front-end",
+            "Performance et mise en ligne"
+          ]
+        },
+        {
+          "id": "shopify",
+          "label": "Shopify / Liquid",
+          "title": "Une boutique adaptée à vos produits",
+          "description": "Personnalisation de thème, sections Liquid et amélioration du parcours d'achat.",
+          "deliverables": [
+            "Sections sur mesure",
+            "Contenus et CMS",
+            "Responsive et UI/UX"
+          ]
+        },
+        {
+          "id": "nocode",
+          "label": "No-code / CMS",
+          "title": "Un site que vous pouvez gérer",
+          "description": "Création ou reprise d'un site Wix, Webflow ou CMS avec une structure simple à maintenir.",
+          "deliverables": [
+            "Pages et collections",
+            "Automatisations",
+            "Prise en main du contenu"
+          ]
+        },
+        {
+          "id": "app",
+          "label": "Application / logiciel",
+          "title": "Un outil pour votre activité",
+          "description": "Développement d'interfaces, de dashboards et de logiciels sur mesure adaptés à un besoin métier.",
+          "deliverables": [
+            "C / C# / Python",
+            "Interfaces et backends",
+            "Données et déploiement"
+          ]
+        }
+      ],
+      "workEyebrow": "Aperçu",
+      "workTitle": "Projets récents",
+      "workText": "Des réalisations web et logicielles où le développement répond à un besoin concret.",
+      "viewAll": "Voir tous les projets",
+      "aboutEyebrow": "En bref",
+      "aboutTitle": "Développement web, logiciel et e-commerce.",
+      "aboutText": "Je suis en 4e année à Epitech Paris et je travaille aujourd'hui comme développeur web & logiciel freelance. Je conçois des sites, des boutiques Shopify, des applications et des outils métier.",
+      "aboutLink": "Découvrir le profil"
+    },
+    "about": {
+      "eyebrow": "Profil",
+      "title": "Profil et compétences.",
+      "intro": "Je développe des sites, des applications et des logiciels en choisissant une solution adaptée au besoin.",
+      "paragraph": "Mon parcours a commencé par la résolution de problèmes matériels, puis la programmation au collège et au lycée. À Epitech, j'ai développé des projets en C, Python, web et data. Mes expériences en agence et en entreprise m'ont appris à travailler avec des contraintes réelles et des objectifs concrets.",
+      "contactLink": "Me contacter",
+      "factsTitle": "Repères",
+      "facts": [
+        {
+          "label": "Formation",
+          "value": "4e année · Epitech Paris"
+        },
+        {
+          "label": "Mobilité",
+          "value": "Paris · Long Beach"
+        },
+        {
+          "label": "Langues",
+          "value": "Français · anglais · espagnol"
+        },
+        {
+          "label": "Statut",
+          "value": "Freelance web & logiciel"
+        }
+      ],
+      "skillsTitle": "Compétences",
+      "skillGroups": [
+        {
+          "title": "Logiciel & développement",
+          "items": "C · C# · Python · JavaScript · HTML / CSS · .NET"
+        },
+        {
+          "title": "Web & e-commerce",
+          "items": "React · Django · Shopify · Liquid · Wix · CMS"
+        },
+        {
+          "title": "Données & outils",
+          "items": "PostgreSQL · SQLite · Docker · Linux · Git"
+        }
+      ],
+      "photoAlt": "Portrait de Zoltan Babko"
+    },
+    "journey": {
+      "eyebrow": "Parcours",
+      "title": "Expérience & formation.",
+      "intro": "Des expériences professionnelles variées, avec un fil conducteur : apprendre vite et livrer quelque chose d'utilisable.",
+      "experienceTab": "Expériences",
+      "educationTab": "Formation",
+      "experience": [
+        {
+          "date": "Aujourd'hui",
+          "company": "Activité indépendante",
+          "role": "Développeur web & logiciel freelance",
+          "description": "Missions web, applications et logiciels sur mesure, Shopify/Liquid, CMS et no-code, de la structure à l'optimisation."
+        },
+        {
+          "date": "Avr. - Juil. 2026",
+          "company": "Marie-Louise Orlach® · Paris",
+          "role": "Développeur Web Liquid / No Code Shopify",
+          "description": "Intégration de pages, personnalisation Liquid, fonctionnalités sur mesure, UI/UX, CMS, responsive, performance et communication digitale."
+        },
+        {
+          "date": "Sept. 2025 - Févr. 2026",
+          "company": "Agence Piscines & Spas 60/02 · Villers-Cotterêts",
+          "role": "Développeur Web / No-code",
+          "description": "Modification du site existant et création en parallèle d'un site vitrine no-code."
+        },
+        {
+          "date": "Sept. - Déc. 2024",
+          "company": "Alltoo · Paris",
+          "role": "Développeur Full Stack",
+          "description": "Stage en Python/Django et HTML/CSS/JS : maintenance de CRM, analyse de données et participation aux interfaces web."
+        }
+      ],
+      "education": [
+        {
+          "date": "2023 - 2028",
+          "school": "Epitech · Paris",
+          "degree": "Expert en ingénierie logicielle",
+          "description": "Titre RNCP niveau 7 · pédagogie par projets."
+        },
+        {
+          "date": "2026 - 2027",
+          "school": "California State University, Long Beach",
+          "degree": "Computer and Information Sciences",
+          "description": "Programme d'échange universitaire."
+        },
+        {
+          "date": "Parcours",
+          "school": "Lycée Européen",
+          "degree": "Baccalauréat général",
+          "description": "Formation secondaire."
+        }
+      ]
+    },
+    "projects": {
+      "eyebrow": "Projets",
+      "title": "Projets sélectionnés.",
+      "intro": "Des projets personnels et professionnels qui montrent différentes façons de construire pour le web.",
+      "filters": {
+        "all": "Tous",
+        "fullstack": "Full-stack",
+        "shopify": "Shopify / e-commerce",
+        "nocode": "No-code",
+        "infrastructure": "Infrastructure"
+      },
+      "filterLabel": "Filtrer les projets",
+      "items": [
+        {
+          "id": "marie-louise-orlach",
+          "category": "shopify",
+          "type": "Projet client · e-commerce",
+          "title": "Marie-Louise Orlach®",
+          "description": "Création et personnalisation d'un site e-commerce Shopify pour une marque de bijoux artisanaux fabriqués à Paris : thème Liquid, sections sur mesure, collections et parcours d'achat.",
+          "image": "assets/images/marie-louise-orlach.png",
+          "alt": "Aperçu du site e-commerce Marie-Louise Orlach",
+          "tags": [
+            "Shopify",
+            "Liquid",
+            "E-commerce",
+            "UI/UX"
+          ],
+          "demo": "https://marielouiseorlach.com/",
+          "repo": ""
+        },
+        {
+          "id": "area",
+          "category": "fullstack",
+          "type": "Projet personnel",
+          "title": "AREA",
+          "description": "Projet personnel : plateforme d'automatisation inspirée d'IFTTT, développée pour connecter plusieurs services web.",
+          "image": "assets/images/area.png",
+          "alt": "Aperçu de la plateforme AREA",
+          "tags": [
+            "Python",
+            "PostgreSQL",
+            "React",
+            "Flutter"
+          ],
+          "demo": "",
+          "repo": "https://github.com/zoltanbabko/area"
+        },
+        {
+          "id": "aps",
+          "category": "nocode",
+          "type": "Site vitrine",
+          "title": "Agence Piscines & Spas 60/02",
+          "description": "Site vitrine no-code avec collections et automatisations pour simplifier la gestion du contenu.",
+          "image": "assets/images/aps.png",
+          "alt": "Aperçu du site Agence Piscines et Spas",
+          "tags": [
+            "Wix",
+            "CMS",
+            "Automatisation"
+          ],
+          "demo": "",
+          "repo": ""
+        },
+        {
+          "id": "dashboard",
+          "category": "fullstack",
+          "type": "Projet personnel",
+          "title": "Dashboard Widgets",
+          "description": "Projet personnel : tableau de bord modulable avec widgets ajoutables, supprimables et réorganisables.",
+          "image": "assets/images/dashboard_widgets.png",
+          "alt": "Aperçu du dashboard de widgets",
+          "tags": [
+            "React",
+            "Python",
+            "SQLite"
+          ],
+          "demo": "",
+          "repo": "https://github.com/zoltanbabko/B-DEV-500_dashboard"
+        },
+        {
+          "id": "home-server",
+          "category": "infrastructure",
+          "type": "Projet personnel",
+          "title": "Portfolio & Home Server",
+          "description": "Portfolio hébergé sur un serveur local, avec infrastructure et mise en ligne via Cloudflare.",
+          "image": "assets/images/portfolio.png",
+          "alt": "Aperçu du portfolio et de son infrastructure",
+          "tags": [
+            "Linux",
+            "Docker",
+            "Cloudflare"
+          ],
+          "demo": "",
+          "repo": "https://github.com/zoltanbabko/Portfolio-Home-Server"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Parlons de votre projet.",
+      "intro": "Décrivez votre besoin en quelques lignes. Votre message sera enregistré pour que je puisse vous répondre.",
+      "emailLabel": "Email direct",
+      "phoneLabel": "Téléphone",
+      "linksLabel": "Liens",
+      "form": {
+        "name": "Votre nom",
+        "namePlaceholder": "Nom ou entreprise",
+        "email": "Votre email",
+        "emailPlaceholder": "vous@exemple.com",
+        "need": "Votre besoin",
+        "needPlaceholder": "Choisir une catégorie",
+        "needs": {
+          "site": "Site vitrine",
+          "shopify": "Shopify / Liquid",
+          "nocode": "No-code / CMS",
+          "app": "Application / logiciel",
+          "other": "Autre besoin"
+        },
+        "message": "Quelques détails",
+        "messagePlaceholder": "Objectif, délai, lien vers l'existant...",
+        "submit": "Envoyer le message",
+        "privacy": "Vos informations sont enregistrées uniquement pour répondre à votre demande."
+      }
+    }
+  },
+  "en": {
+    "common": {
+      "role": "Freelance web & software developer",
+      "location": "Paris · France",
+      "nav": {
+        "home": "Home",
+        "about": "Profile",
+        "journey": "Background",
+        "projects": "Projects",
+        "contact": "Contact"
+      },
+      "ui": {
+        "menu": "Menu",
+        "close": "Close",
+        "language": "Language",
+        "navLabel": "Main navigation",
+        "skip": "Skip to content",
+        "all": "All",
+        "viewProject": "View project",
+        "demo": "Live demo",
+        "repository": "Source code",
+        "openExternal": "Opens the link in a new tab",
+        "previous": "Previous",
+        "next": "Next",
+        "emptyProjects": "No project in this category.",
+        "formSent": "Your message was saved successfully.",
+        "formError": "Please enter your name, email and project need.",
+        "formServerError": "The message could not be saved. Please try again."
+      },
+      "footer": {
+        "available": "Available for new projects",
+        "copyright": "© {year} Zoltan Babko",
+        "back": "Back to top"
+      }
+    },
+    "home": {
+      "eyebrow": "Freelance web & software · Paris",
+      "title": "Freelance web & software developer.",
+      "titleLead": "Freelance web & software",
+      "titleAccent": "developer.",
+      "intro": "I build websites, applications and software adapted to your needs.",
+      "primary": "View my projects",
+      "secondary": "Discuss your need",
+      "status": "Available for a project",
+      "educationFact": "Epitech / 4th year",
+      "panelCode": "ZB / WORKSPACE / 2026",
+      "panelTitle": "What do you need?",
+      "panelText": "Select a topic to see how I can help.",
+      "selectorLabel": "Your need",
+      "selectedLabel": "What I can deliver",
+      "serviceCta": "Describe this need",
+      "services": [
+        {
+          "id": "site",
+          "label": "Business website",
+          "title": "Structure, build and launch",
+          "description": "A clear, responsive website that is easy to improve as your business grows.",
+          "deliverables": [
+            "Page structure",
+            "UI and front-end build",
+            "Performance and launch"
+          ]
+        },
+        {
+          "id": "shopify",
+          "label": "Shopify / Liquid",
+          "title": "A store adapted to your products",
+          "description": "Theme customization, Liquid sections and improvements to the shopping journey.",
+          "deliverables": [
+            "Custom sections",
+            "Content and CMS",
+            "Responsive UI/UX"
+          ]
+        },
+        {
+          "id": "nocode",
+          "label": "No-code / CMS",
+          "title": "A site you can manage",
+          "description": "A new or existing Wix, Webflow or CMS site with a simple content structure.",
+          "deliverables": [
+            "Pages and collections",
+            "Automations",
+            "Content handover"
+          ]
+        },
+        {
+          "id": "app",
+          "label": "Application / software",
+          "title": "A tool for your business",
+          "description": "Interfaces, dashboards and custom software adapted to a practical business need.",
+          "deliverables": [
+            "C / C# / Python",
+            "Interfaces and backends",
+            "Data and deployment"
+          ]
+        }
+      ],
+      "workEyebrow": "Selected work",
+      "workTitle": "Recent projects",
+      "workText": "Web and software projects where development answers a practical need.",
+      "viewAll": "View all projects",
+      "aboutEyebrow": "About",
+      "aboutTitle": "Web development, software and e-commerce.",
+      "aboutText": "I am a fourth-year student at Epitech Paris and I currently work as a freelance web and software developer. I build websites, Shopify stores, applications and business tools.",
+      "aboutLink": "Discover the profile"
+    },
+    "about": {
+      "eyebrow": "Profile",
+      "title": "Profile and skills.",
+      "intro": "I build websites, applications and software with a solution adapted to the project need.",
+      "paragraph": "My path started with hardware problem solving, then programming in school. At Epitech, I built projects in C, Python, web and data. My agency and company experience taught me to work with real constraints and concrete goals.",
+      "contactLink": "Contact me",
+      "factsTitle": "Key facts",
+      "facts": [
+        {
+          "label": "Education",
+          "value": "4th year · Epitech Paris"
+        },
+        {
+          "label": "Location",
+          "value": "Paris · Long Beach"
+        },
+        {
+          "label": "Languages",
+          "value": "French · English · Spanish"
+        },
+        {
+          "label": "Status",
+          "value": "Freelance web & software"
+        }
+      ],
+      "skillsTitle": "Skills",
+      "skillGroups": [
+        {
+          "title": "Software & development",
+          "items": "C · C# · Python · JavaScript · HTML / CSS · .NET"
+        },
+        {
+          "title": "Web & e-commerce",
+          "items": "React · Django · Shopify · Liquid · Wix · CMS"
+        },
+        {
+          "title": "Data & tools",
+          "items": "PostgreSQL · SQLite · Docker · Linux · Git"
+        }
+      ],
+      "photoAlt": "Portrait of Zoltan Babko"
+    },
+    "journey": {
+      "eyebrow": "Background",
+      "title": "Experience and education.",
+      "intro": "Different professional experiences, with a focus on learning quickly and delivering useful work.",
+      "experienceTab": "Experience",
+      "educationTab": "Education",
+      "experience": [
+        {
+          "date": "Now",
+          "company": "Independent work",
+          "role": "Freelance web & software developer",
+          "description": "Web, application and custom software projects, Shopify/Liquid, CMS and no-code, from structure to optimization."
+        },
+        {
+          "date": "Apr. - Jul. 2026",
+          "company": "Marie-Louise Orlach® · Paris",
+          "role": "Liquid / No-code Shopify Web Developer",
+          "description": "Page integration, Liquid customization, custom features, UI/UX, CMS, responsive work, performance and digital communication."
+        },
+        {
+          "date": "Sept. 2025 - Feb. 2026",
+          "company": "Agence Piscines & Spas 60/02 · Villers-Cotterêts",
+          "role": "Web / No-code Developer",
+          "description": "Updated the existing website and created a new no-code showcase website in parallel."
+        },
+        {
+          "date": "Sept. - Dec. 2024",
+          "company": "Alltoo · Paris",
+          "role": "Full-stack Developer",
+          "description": "Python/Django and HTML/CSS/JS internship: CRM maintenance, data analysis and web interfaces."
+        }
+      ],
+      "education": [
+        {
+          "date": "2023 - 2028",
+          "school": "Epitech · Paris",
+          "degree": "Expert in Software Engineering",
+          "description": "RNCP level 7 · project-based learning."
+        },
+        {
+          "date": "2026 - 2027",
+          "school": "California State University, Long Beach",
+          "degree": "Computer and Information Sciences",
+          "description": "University exchange program."
+        },
+        {
+          "date": "Education",
+          "school": "Lycée Européen",
+          "degree": "General Baccalaureate",
+          "description": "Secondary education."
+        }
+      ]
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "title": "Selected projects.",
+      "intro": "Personal and professional projects showing different ways to build for the web.",
+      "filters": {
+        "all": "All",
+        "fullstack": "Full-stack",
+        "shopify": "Shopify / e-commerce",
+        "nocode": "No-code",
+        "infrastructure": "Infrastructure"
+      },
+      "filterLabel": "Filter projects",
+      "items": [
+        {
+          "id": "marie-louise-orlach",
+          "category": "shopify",
+          "type": "Client project · e-commerce",
+          "title": "Marie-Louise Orlach®",
+          "description": "Shopify e-commerce website built and customized for a Paris-based handmade jewelry brand: Liquid theme work, custom sections, product collections and a clear shopping journey.",
+          "image": "assets/images/marie-louise-orlach.png",
+          "alt": "Marie-Louise Orlach e-commerce website preview",
+          "tags": [
+            "Shopify",
+            "Liquid",
+            "E-commerce",
+            "UI/UX"
+          ],
+          "demo": "https://marielouiseorlach.com/",
+          "repo": ""
+        },
+        {
+          "id": "area",
+          "category": "fullstack",
+          "type": "Personal project",
+          "title": "AREA",
+          "description": "Personal project: an IFTTT-inspired automation platform built to connect several web services.",
+          "image": "assets/images/area.png",
+          "alt": "AREA automation platform preview",
+          "tags": [
+            "Python",
+            "PostgreSQL",
+            "React",
+            "Flutter"
+          ],
+          "demo": "",
+          "repo": "https://github.com/zoltanbabko/area"
+        },
+        {
+          "id": "aps",
+          "category": "nocode",
+          "type": "Business website",
+          "title": "Agence Piscines & Spas 60/02",
+          "description": "A no-code showcase website with collections and automations for easier content management.",
+          "image": "assets/images/aps.png",
+          "alt": "Agence Piscines and Spas website preview",
+          "tags": [
+            "Wix",
+            "CMS",
+            "Automation"
+          ],
+          "demo": "",
+          "repo": ""
+        },
+        {
+          "id": "dashboard",
+          "category": "fullstack",
+          "type": "Personal project",
+          "title": "Dashboard Widgets",
+          "description": "Personal project: a modular dashboard where users can add, remove and reorder widgets.",
+          "image": "assets/images/dashboard_widgets.png",
+          "alt": "Widgets dashboard preview",
+          "tags": [
+            "React",
+            "Python",
+            "SQLite"
+          ],
+          "demo": "",
+          "repo": "https://github.com/zoltanbabko/B-DEV-500_dashboard"
+        },
+        {
+          "id": "home-server",
+          "category": "infrastructure",
+          "type": "Personal project",
+          "title": "Portfolio & Home Server",
+          "description": "A portfolio hosted on a local server, with infrastructure and Cloudflare deployment.",
+          "image": "assets/images/portfolio.png",
+          "alt": "Portfolio and infrastructure preview",
+          "tags": [
+            "Linux",
+            "Docker",
+            "Cloudflare"
+          ],
+          "demo": "",
+          "repo": "https://github.com/zoltanbabko/Portfolio-Home-Server"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Let's discuss your project.",
+      "intro": "Describe your need in a few lines. Your message will be saved so I can reply to you.",
+      "emailLabel": "Direct email",
+      "phoneLabel": "Phone",
+      "linksLabel": "Links",
+      "form": {
+        "name": "Your name",
+        "namePlaceholder": "Name or company",
+        "email": "Your email",
+        "emailPlaceholder": "you@example.com",
+        "need": "Your need",
+        "needPlaceholder": "Choose a category",
+        "needs": {
+          "site": "Business website",
+          "shopify": "Shopify / Liquid",
+          "nocode": "No-code / CMS",
+          "app": "Application / software",
+          "other": "Other need"
+        },
+        "message": "A few details",
+        "messagePlaceholder": "Goal, timeline, existing link...",
+        "submit": "Send message",
+        "privacy": "Your information is stored only to answer your request."
+      }
+    }
+  }
+}

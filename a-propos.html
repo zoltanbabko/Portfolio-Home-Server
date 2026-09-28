@@ -1,83 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R53XW4SCFG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-R53XW4SCFG');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À Propos | Zoltan Babko</title>
+    <meta name="description" content="Profil de Zoltan Babko, développeur web &amp; logiciel freelance.">
+    <meta name="theme-color" content="#0d1117">
+    <title>Zoltan Babko | Profil</title>
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Zoltan Babko</a>
-        
-        <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    
-        <ul class="nav-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html" class="active">À propos</a></li>
-            <li><a href="parcours.html">Parcours</a></li>
-            <li><a href="projets.html">Projets</a></li>
-        </ul>
-    </nav>
+<body data-page="about">
+    <a class="skip-link" href="#main-content" data-i18n="common.ui.skip">Aller au contenu</a>
 
-    <main class="page-container about-page">
-        <div class="about-grid">
-            <div class="about-image fade-in">
-                <img src="assets/images/zoltan_babko.jpeg" alt="Zoltan Babko">
-            </div>
-            
-            <div class="about-text fade-in">
-                <h2>Qui suis-je ?</h2>
-                <p>Passionné par l'informatique et la résolution de problèmes, je suis actuellement en 3ème année à <strong>Epitech Paris</strong>. Mon parcours m'a permis de toucher à de nombreux paradigmes de programmation, du bas niveau (C/C++) à la création d'architectures web complexes (Python, React).</p>
-                <p>Je suis activement à la recherche d'un stage stimulant de 4 mois, du <strong>29 Mars au 29 Juillet 2026</strong>, pour mettre en pratique mes compétences au sein d'une équipe technique.</p>
-                
-                <div class="personal-info">
-                    <div class="info-block">
-                        <i class="fas fa-language"></i>
-                        <h4>Langues</h4>
-                        <p>Anglais (TOEIC: 755)<br>Espagnol (Niveau B1)</p>
-                    </div>
-                    <div class="info-block">
-                        <i class="fas fa-heart"></i>
-                        <h4>Centres d'intérêt</h4>
-                        <p>Voyage, Sport, Cinéma<br>Balades, Jeux vidéo</p>
-                    </div>
-                    <div class="info-block">
-                        <i class="fas fa-car"></i>
-                        <h4>Mobilité</h4>
-                        <p>Permis B<br>Véhiculé</p>
-                    </div>
-                </div>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Zoltan Babko">
+            <span class="brand-details">Zoltan Babko<small data-i18n="common.role">Développeur web &amp; logiciel freelance</small></span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span data-i18n="common.ui.menu">Menu</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span></button>
+        <nav class="site-menu" id="site-menu" data-i18n-attr="aria-label:common.ui.navLabel" aria-label="Navigation principale">
+            <a data-nav="home" href="index.html" data-i18n="common.nav.home">Accueil</a>
+            <a data-nav="about" href="a-propos.html" data-i18n="common.nav.about">Profil</a>
+            <a data-nav="journey" href="parcours.html" data-i18n="common.nav.journey">Parcours</a>
+            <a data-nav="projects" href="projets.html" data-i18n="common.nav.projects">Projets</a>
+            <a data-nav="contact" href="contact.html" data-i18n="common.nav.contact">Contact</a>
+            <div class="language-switch" data-i18n-attr="aria-label:common.ui.language" aria-label="Langue"><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div>
+        </nav>
+    </header>
 
-                <div class="contact-card">
-                    <h3>Me Contacter</h3>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> contact@zoltanbabko.fr</li>
-                        <li><i class="fas fa-phone"></i> 06 77 32 08 20</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 13 rue Paul de Kock, 75019 Paris</li>
-                    </ul>
-                    <div class="socials">
-                        <a href="https://www.linkedin.com/in/zoltan-babko/" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/zoltanbabko" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                </div>
+    <main class="page-main" id="main-content">
+        <header class="page-heading content-width reveal">
+            <span class="page-index">02 / 05</span>
+            <div><p class="eyebrow" data-i18n="about.eyebrow">Profil</p><h1 data-i18n="about.title">Un parcours entre code et terrain.</h1><p class="intro" data-i18n="about.intro">Je construis des expériences web et des outils avec une approche simple : comprendre le besoin, choisir la bonne solution, puis la rendre solide et facile à utiliser.</p></div>
+            <p class="page-note" data-i18n="about.paragraph">Mon parcours a commencé par la résolution de problèmes matériels, puis la programmation au collège et au lycée. À Epitech, j'ai développé des projets en C, Python, web et data. Mes expériences en agence et en entreprise m'ont appris à travailler avec des contraintes réelles et des objectifs concrets.</p>
+        </header>
+
+        <section class="profile-layout content-width">
+            <div class="portrait-frame reveal">
+                <img src="assets/images/zoltan_babko.jpeg" data-i18n-attr="alt:about.photoAlt" alt="Portrait de Zoltan Babko">
+                <div class="portrait-caption"><span>ZB / 2026</span><span data-i18n="common.location">Paris · France</span></div>
             </div>
-        </div>
+            <div class="profile-copy reveal delay-1">
+                <h2><span data-i18n="about.factsTitle">Repères</span></h2>
+                <div class="facts" id="facts-grid"></div>
+            </div>
+        </section>
+
+        <section class="detail-section content-width section-block">
+            <div class="reveal"><p class="eyebrow" data-i18n="about.skillsTitle">Compétences</p><h2 data-i18n="about.skillsTitle">Compétences</h2></div>
+            <div class="skills-grid" id="skills-grid"></div>
+        </section>
     </main>
 
-    <script src="js/script.js"></script>
+    <footer class="site-footer content-width"><span class="footer-meta" data-i18n="common.footer.copyright">© 2026 Zoltan Babko</span><span class="footer-meta" data-i18n="common.footer.available">Disponible pour de nouvelles missions</span><a href="contact.html" data-i18n="common.nav.contact">Contact</a></footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
