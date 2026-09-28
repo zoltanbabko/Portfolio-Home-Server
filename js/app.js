@@ -1,6 +1,7 @@
 document.documentElement.classList.add('js');
 
 const storedLanguage = localStorage.getItem('portfolio-language');
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz6in5pUE9yGlQPJ7zUX36XCG5dYdC1ykDko2hPilF9bQO8jmejtI4uXLp8DndO6LmZ/exec';
 
 const state = {
     language: storedLanguage === 'en' ? 'en' : 'fr',
@@ -250,7 +251,7 @@ const initContactForm = () => {
     const form = document.querySelector('#contact-form');
     if (!form || form.dataset.ready === 'true') return;
     form.dataset.ready = 'true';
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
         event.preventDefault();
         const data = new FormData(form);
         const name = String(data.get('name') || '').trim();
@@ -258,6 +259,7 @@ const initContactForm = () => {
         const need = String(data.get('need') || '').trim();
         const message = String(data.get('message') || '').trim();
         const status = document.querySelector('#form-status');
+
         if (!name || !email || !need || !message) {
             if (status) {
                 status.textContent = currentContent().common.ui.formError;
@@ -267,12 +269,33 @@ const initContactForm = () => {
         }
 
         const selectedNeed = currentContent().contact.form.needs[need] || need;
-        const subject = encodeURIComponent(`[Portfolio] ${selectedNeed} - ${name}`);
-        const body = encodeURIComponent(`Nom : ${name}\nEmail : ${email}\nBesoin : ${selectedNeed}\n\n${message}`);
-        window.location.href = `mailto:zoltan.babko@epitech.eu?subject=${subject}&body=${body}`;
-        if (status) {
-            status.textContent = currentContent().common.ui.formSent;
-            status.classList.add('is-visible');
+        const payload = new URLSearchParams({
+            name,
+            email,
+            need: selectedNeed,
+            message,
+            language: state.language,
+            website: String(data.get('website') || '')
+        });
+
+        try {
+            await fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                body: payload,
+                mode: 'no-cors'
+            });
+
+            form.reset();
+            if (status) {
+                status.textContent = currentContent().common.ui.formSent;
+                status.classList.add('is-visible');
+            }
+        } catch (error) {
+            console.error('Unable to save the contact form.', error);
+            if (status) {
+                status.textContent = currentContent().common.ui.formServerError;
+                status.classList.add('is-visible');
+            }
         }
     });
 };

@@ -24,8 +24,9 @@
         "previous": "Précédent",
         "next": "Suivant",
         "emptyProjects": "Aucun projet dans cette catégorie.",
-        "formSent": "Votre message est prêt à être envoyé par email.",
-        "formError": "Merci de renseigner votre nom, votre email et votre besoin."
+        "formSent": "Votre message a bien été enregistré.",
+        "formError": "Merci de renseigner votre nom, votre email et votre besoin.",
+        "formServerError": "Impossible d'enregistrer le message. Réessayez dans quelques instants."
       },
       "footer": {
         "available": "Disponible pour de nouvelles missions",
@@ -299,7 +300,7 @@
     "contact": {
       "eyebrow": "Contact",
       "title": "Parlons de votre projet.",
-      "intro": "Décrivez votre besoin en quelques lignes. Le bouton ci-dessous préparera un email avec les informations renseignées.",
+      "intro": "Décrivez votre besoin en quelques lignes. Votre message sera enregistré pour que je puisse vous répondre.",
       "emailLabel": "Email direct",
       "phoneLabel": "Téléphone",
       "linksLabel": "Liens",
@@ -319,8 +320,8 @@
         },
         "message": "Quelques détails",
         "messagePlaceholder": "Objectif, délai, lien vers l'existant...",
-        "submit": "Préparer l'email",
-        "privacy": "Aucune donnée n'est stockée sur ce site."
+        "submit": "Envoyer le message",
+        "privacy": "Vos informations sont enregistrées uniquement pour répondre à votre demande."
       }
     }
   },
@@ -349,8 +350,9 @@
         "previous": "Previous",
         "next": "Next",
         "emptyProjects": "No project in this category.",
-        "formSent": "Your message is ready to be sent by email.",
-        "formError": "Please enter your name, email and project need."
+        "formSent": "Your message was saved successfully.",
+        "formError": "Please enter your name, email and project need.",
+        "formServerError": "The message could not be saved. Please try again."
       },
       "footer": {
         "available": "Available for new projects",
@@ -624,7 +626,7 @@
     "contact": {
       "eyebrow": "Contact",
       "title": "Let's discuss your project.",
-      "intro": "Describe your need in a few lines. The button below will prepare an email with the information you entered.",
+      "intro": "Describe your need in a few lines. Your message will be saved so I can reply to you.",
       "emailLabel": "Direct email",
       "phoneLabel": "Phone",
       "linksLabel": "Links",
@@ -644,8 +646,8 @@
         },
         "message": "A few details",
         "messagePlaceholder": "Goal, timeline, existing link...",
-        "submit": "Prepare email",
-        "privacy": "No data is stored on this website."
+        "submit": "Send message",
+        "privacy": "Your information is stored only to answer your request."
       }
     }
   }
