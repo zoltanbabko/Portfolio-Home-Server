@@ -1673,3 +1673,470 @@ html.js .delay-2 {
         transform: none;
     }
 }
+
+
+/* Responsive repair: tablet, mobile and narrow screens */
+@media (max-width: 920px) {
+    body {
+        min-width: 0;
+    }
+
+    .site-header {
+        position: sticky;
+        z-index: 100;
+        top: 0;
+        padding: 9px 20px;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        min-height: 44px;
+    }
+
+    .site-menu {
+        position: absolute;
+        top: calc(100% + 1px);
+        right: 20px;
+        left: 20px;
+        display: grid;
+        gap: 2px;
+        border: 1px solid var(--line-strong);
+        background: var(--panel);
+        padding: 9px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity 0.25s ease, transform 0.25s var(--ease);
+    }
+
+    .site-menu.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .site-menu a {
+        display: flex;
+        min-height: 44px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px;
+    }
+
+    .site-menu a::before {
+        display: none;
+    }
+
+    .site-menu a:hover,
+    .site-menu a.active {
+        background: var(--panel-3);
+    }
+
+    .language-switch {
+        justify-self: start;
+        margin: 8px 0 3px;
+    }
+
+    .language-switch button {
+        min-height: 42px;
+    }
+
+    .content-width {
+        width: calc(100% - 40px);
+    }
+
+    .hero {
+        display: flex;
+        min-height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 44px;
+        padding-top: clamp(64px, 10vw, 100px);
+        padding-bottom: 80px;
+    }
+
+    .hero h1,
+    .page-heading h1 {
+        max-width: 100%;
+        font-size: clamp(3.2rem, 10vw, 6.4rem);
+        overflow-wrap: anywhere;
+    }
+
+    .module {
+        width: 100%;
+    }
+
+    .home-strip {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-bottom: 80px;
+    }
+
+    .section-heading {
+        grid-template-columns: 55px minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .section-heading p:last-child {
+        grid-column: 2;
+        margin-top: 16px;
+    }
+
+    .page-heading {
+        display: block;
+        padding-top: clamp(64px, 10vw, 120px);
+        padding-bottom: 64px;
+    }
+
+    .page-index {
+        display: block;
+        margin-bottom: 22px;
+    }
+
+    .page-note {
+        max-width: 560px;
+        margin-top: 32px;
+        overflow-wrap: anywhere;
+    }
+
+    .profile-layout,
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 44px;
+    }
+
+    .portrait-frame {
+        position: relative;
+        top: auto;
+        width: min(100%, 520px);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .timeline-item {
+        grid-template-columns: 150px minmax(0, 1fr) 30px;
+        gap: 18px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .project-card:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .contact-copy h2 {
+        max-width: 760px;
+    }
+
+    .contact-detail a {
+        overflow-wrap: anywhere;
+    }
+
+    .site-footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        padding-inline: 16px;
+    }
+
+    .brand {
+        min-width: 0;
+        gap: 8px;
+    }
+
+    .brand-mark {
+        width: 36px;
+        height: 36px;
+        flex: 0 0 36px;
+    }
+
+    .brand-details {
+        min-width: 0;
+        font-size: 0.84rem;
+    }
+
+    .brand-details small {
+        max-width: 150px;
+        overflow-wrap: anywhere;
+        font-size: 0.48rem;
+        line-height: 1.25;
+    }
+
+    .site-menu {
+        right: 16px;
+        left: 16px;
+    }
+
+    .content-width {
+        width: calc(100% - 32px);
+    }
+
+    .hero {
+        gap: 36px;
+        padding-top: 56px;
+        padding-bottom: 68px;
+    }
+
+    .hero h1,
+    .page-heading h1 {
+        font-size: clamp(2.65rem, 13vw, 4.5rem);
+        letter-spacing: -0.08em;
+    }
+
+    .hero-intro,
+    .page-heading .intro {
+        margin-top: 22px;
+        font-size: 0.95rem;
+    }
+
+    .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 26px;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .hero-facts {
+        gap: 7px;
+        margin-top: 36px;
+    }
+
+    .hero-facts span {
+        max-width: 100%;
+        padding: 7px 8px;
+        font-size: 0.55rem;
+    }
+
+    .module-body {
+        padding: 20px;
+    }
+
+    .module-body h2 {
+        font-size: clamp(1.8rem, 9vw, 2.6rem);
+    }
+
+    .service-picker button:hover {
+        transform: none;
+    }
+
+    .home-strip {
+        gap: 18px;
+        padding-top: 20px;
+        padding-bottom: 68px;
+    }
+
+    .section-heading {
+        grid-template-columns: 36px minmax(0, 1fr);
+        gap: 12px;
+        margin-bottom: 34px;
+    }
+
+    .section-heading h2,
+    .home-strip h2 {
+        font-size: clamp(2.3rem, 12vw, 4rem);
+    }
+
+    .mini-projects {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .project-preview,
+    .project-preview:first-child {
+        min-height: 300px;
+        grid-row: auto;
+    }
+
+    .page-heading {
+        padding-top: 56px;
+        padding-bottom: 48px;
+    }
+
+    .page-note {
+        max-width: none;
+        margin-top: 26px;
+        padding-left: 12px;
+    }
+
+    .profile-layout,
+    .contact-layout {
+        gap: 34px;
+    }
+
+    .profile-copy > h2,
+    .detail-section h2,
+    .contact-copy h2 {
+        font-size: clamp(2.5rem, 12vw, 4.2rem);
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+        margin-top: 32px;
+    }
+
+    .skill-group {
+        min-height: auto;
+        padding: 16px;
+    }
+
+    .skill-group p {
+        margin-top: 32px;
+        font-size: 1rem;
+    }
+
+    .timeline-tabs {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .tab-button,
+    .filter-button {
+        padding: 9px 10px;
+        font-size: 0.58rem;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr 24px;
+        gap: 10px;
+        padding-block: 20px 24px;
+    }
+
+    .timeline-item:first-child {
+        padding-left: 11px;
+    }
+
+    .timeline-date {
+        grid-column: 1 / -1;
+    }
+
+    .timeline-content {
+        grid-column: 1;
+    }
+
+    .timeline-mark {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .timeline-item h3 {
+        font-size: clamp(1.45rem, 7.5vw, 2.2rem);
+        overflow-wrap: anywhere;
+    }
+
+    .timeline-item p:last-child {
+        font-size: 0.82rem;
+    }
+
+    .education-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .projects-toolbar {
+        display: block;
+        margin-bottom: 18px;
+    }
+
+    .project-count {
+        display: block;
+        margin-top: 12px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card,
+    .project-card:first-child {
+        grid-column: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px auto;
+    }
+
+    .project-card:first-child .project-info {
+        padding: 20px;
+    }
+
+    .project-image {
+        min-height: 220px;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info h2,
+    .project-card:not(:first-child) .project-info h2 {
+        margin-top: 30px;
+        font-size: clamp(1.65rem, 8vw, 2.2rem);
+        overflow-wrap: anywhere;
+    }
+
+    .project-info p {
+        font-size: 0.82rem;
+    }
+
+    .project-actions {
+        gap: 12px;
+        padding-top: 20px;
+    }
+
+    .contact-layout {
+        padding-bottom: 70px;
+    }
+
+    .contact-copy h2 {
+        font-size: clamp(2.8rem, 13vw, 5rem);
+    }
+
+    .contact-details {
+        margin-top: 32px;
+    }
+
+    .contact-detail a {
+        font-size: 0.92rem;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-form {
+        padding: 18px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .form-bottom {
+        align-items: stretch;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .form-bottom .button {
+        width: 100%;
+    }
+
+    .form-note {
+        font-size: 0.55rem;
+    }
+
+    .site-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-top: 18px;
+        padding-bottom: 22px;
+    }
+}
