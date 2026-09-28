@@ -103,7 +103,9 @@
       "aboutEyebrow": "En bref",
       "aboutTitle": "Développement web, logiciel et e-commerce.",
       "aboutText": "Je suis en 4e année à Epitech Paris et je travaille aujourd'hui comme développeur web & logiciel freelance. Je conçois des sites, des boutiques Shopify, des applications et des outils métier.",
-      "aboutLink": "Découvrir le profil"
+      "aboutLink": "Découvrir le profil",
+      "seoTitle": "Zoltan Babko | Développeur web & logiciel freelance à Paris",
+      "seoDescription": "Zoltan Babko, développeur web & logiciel freelance à Paris : sites, applications, logiciels sur mesure, Shopify et e-commerce."
     },
     "about": {
       "eyebrow": "Profil",
@@ -145,7 +147,9 @@
           "items": "PostgreSQL · SQLite · Docker · Linux · Git"
         }
       ],
-      "photoAlt": "Portrait de Zoltan Babko"
+      "photoAlt": "Portrait de Zoltan Babko",
+      "seoTitle": "À propos | Zoltan Babko — Développeur web & logiciel",
+      "seoDescription": "Découvrez le profil et les compétences de Zoltan Babko, développeur web & logiciel freelance à Paris."
     },
     "journey": {
       "eyebrow": "Parcours",
@@ -198,7 +202,9 @@
           "degree": "Baccalauréat général",
           "description": "Formation secondaire."
         }
-      ]
+      ],
+      "seoTitle": "Parcours | Zoltan Babko — Expériences & formation",
+      "seoDescription": "Expériences et formation de Zoltan Babko en développement web, logiciel, Shopify et e-commerce."
     },
     "projects": {
       "eyebrow": "Projets",
@@ -295,7 +301,9 @@
           "demo": "",
           "repo": "https://github.com/zoltanbabko/Portfolio-Home-Server"
         }
-      ]
+      ],
+      "seoTitle": "Projets | Zoltan Babko — Web, logiciel & e-commerce",
+      "seoDescription": "Découvrez les projets de Zoltan Babko : applications, logiciels, Shopify, e-commerce, no-code et infrastructure."
     },
     "contact": {
       "eyebrow": "Contact",
@@ -322,7 +330,9 @@
         "messagePlaceholder": "Objectif, délai, lien vers l'existant...",
         "submit": "Envoyer le message",
         "privacy": "Vos informations sont enregistrées uniquement pour répondre à votre demande."
-      }
+      },
+      "seoTitle": "Contact | Zoltan Babko — Développeur freelance",
+      "seoDescription": "Contactez Zoltan Babko pour créer un site, une application, un logiciel ou une boutique e-commerce."
     }
   },
   "en": {
@@ -429,7 +439,9 @@
       "aboutEyebrow": "About",
       "aboutTitle": "Web development, software and e-commerce.",
       "aboutText": "I am a fourth-year student at Epitech Paris and I currently work as a freelance web and software developer. I build websites, Shopify stores, applications and business tools.",
-      "aboutLink": "Discover the profile"
+      "aboutLink": "Discover the profile",
+      "seoTitle": "Zoltan Babko | Freelance web & software developer in Paris",
+      "seoDescription": "Zoltan Babko is a freelance web and software developer in Paris building websites, applications, custom software and Shopify stores."
     },
     "about": {
       "eyebrow": "Profile",
@@ -471,7 +483,9 @@
           "items": "PostgreSQL · SQLite · Docker · Linux · Git"
         }
       ],
-      "photoAlt": "Portrait of Zoltan Babko"
+      "photoAlt": "Portrait of Zoltan Babko",
+      "seoTitle": "About | Zoltan Babko — Web & software developer",
+      "seoDescription": "Discover the profile and skills of Zoltan Babko, a freelance web and software developer in Paris."
     },
     "journey": {
       "eyebrow": "Background",
@@ -524,7 +538,9 @@
           "degree": "General Baccalaureate",
           "description": "Secondary education."
         }
-      ]
+      ],
+      "seoTitle": "Background | Zoltan Babko — Experience & education",
+      "seoDescription": "Explore Zoltan Babko's experience and education in web development, software, Shopify and e-commerce."
     },
     "projects": {
       "eyebrow": "Projects",
@@ -621,7 +637,9 @@
           "demo": "",
           "repo": "https://github.com/zoltanbabko/Portfolio-Home-Server"
         }
-      ]
+      ],
+      "seoTitle": "Projects | Zoltan Babko — Web, software & e-commerce",
+      "seoDescription": "Explore Zoltan Babko's projects: applications, software, Shopify, e-commerce, no-code and infrastructure."
     },
     "contact": {
       "eyebrow": "Contact",
@@ -648,7 +666,9 @@
         "messagePlaceholder": "Goal, timeline, existing link...",
         "submit": "Send message",
         "privacy": "Your information is stored only to answer your request."
-      }
+      },
+      "seoTitle": "Contact | Zoltan Babko — Freelance developer",
+      "seoDescription": "Contact Zoltan Babko to build a website, application, software tool or e-commerce store."
     }
   }
 }

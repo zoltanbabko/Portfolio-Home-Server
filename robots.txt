@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zoltanbabko.fr/sitemap.xml

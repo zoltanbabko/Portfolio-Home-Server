@@ -1,6 +1,36 @@
 document.documentElement.classList.add('js');
 
 const storedLanguage = localStorage.getItem('portfolio-language');
+const SITE_URL = 'https://zoltanbabko.fr';
+
+const currentCanonicalUrl = () => {
+    const file = window.location.pathname.split('/').filter(Boolean).pop() || '';
+    return `${SITE_URL}/${file && file !== 'index.html' ? file : ''}`;
+};
+
+const setMetaContent = (selector, attributes, value) => {
+    if (!value) return;
+    let element = document.head.querySelector(selector);
+    if (!element) {
+        element = document.createElement('meta');
+        Object.entries(attributes).forEach(([attribute, attributeValue]) => {
+            element.setAttribute(attribute, attributeValue);
+        });
+        document.head.appendChild(element);
+    }
+    element.setAttribute('content', value);
+};
+
+const ensureCanonical = () => {
+    let link = document.head.querySelector('link[rel="canonical"]');
+    if (!link) {
+        link = document.createElement('link');
+        link.setAttribute('rel', 'canonical');
+        document.head.appendChild(link);
+    }
+    link.setAttribute('href', currentCanonicalUrl());
+};
+
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz6in5pUE9yGlQPJ7zUX36XCG5dYdC1ykDko2hPilF9bQO8jmejtI4uXLp8DndO6LmZ/exec';
 
 const state = {
@@ -50,7 +80,25 @@ const applyTranslations = () => {
 
     const page = document.body.dataset.page;
     const pageData = content[page];
-    if (pageData?.title) document.title = `${pageData.title} | Zoltan Babko`;
+    const pageTitle = pageData?.seoTitle || pageData?.title;
+    const pageDescription = pageData?.seoDescription;
+
+    if (pageTitle) {
+        document.title = pageTitle;
+        setMetaContent('meta[property="og:title"]', {property: 'og:title'}, pageTitle);
+        setMetaContent('meta[name="twitter:title"]', {name: 'twitter:title'}, pageTitle);
+    }
+
+    if (pageDescription) {
+        setMetaContent('meta[name="description"]', {name: 'description'}, pageDescription);
+        setMetaContent('meta[property="og:description"]', {property: 'og:description'}, pageDescription);
+        setMetaContent('meta[name="twitter:description"]', {name: 'twitter:description'}, pageDescription);
+    }
+
+    setMetaContent('meta[property="og:url"]', {property: 'og:url'}, currentCanonicalUrl());
+    setMetaContent('meta[property="og:locale"]', {property: 'og:locale'}, state.language === 'en' ? 'en_US' : 'fr_FR');
+    setMetaContent('meta[property="og:locale:alternate"]', {property: 'og:locale:alternate'}, state.language === 'en' ? 'fr_FR' : 'en_US');
+    ensureCanonical();
 };
 
 const setActiveNav = () => {
